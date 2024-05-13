@@ -19,38 +19,65 @@ class HelloWorld(FlowLauncher):
         
         for char in new:
             if char.isdigit() or char.isupper():
-                newNew += char
-
-        
+                newNew += char        
         
         if (newNew != ""):
             finished = int(newNew)
             syntax = new[0]
-            return [
+            if syntax == 'p':
+                return [
                 {
                     "Title": "Paragraphs: {fnum}".format(fnum = finished),
                     "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
                     "IcoPath": "Images/app.png",
+                    "score": 1,
                     "JsonRPCAction": {
                         "method": "genParagraph",
                         "parameters": [finished]
                     }
+                    
                 },
                 {
                     "Title": "Words: {fnum}".format(fnum = finished),
                     "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
                     "IcoPath": "Images/app.png",
+                    "score": 0, # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                     "JsonRPCAction": {
                         "method": "genWord",
                         "parameters": [finished]
                     }
                 }
             ]
+            else: 
+                return [
+                {
+                    "Title": "Words: {fnum}".format(fnum = finished),
+                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
+                    "IcoPath": "Images/app.png",
+                    "score": 1,
+                    "JsonRPCAction": {
+                        "method": "genWord",
+                        "parameters": [finished]
+                    },
+                },
+                {
+                    "Title": "Paragraphs: {fnum}".format(fnum = finished),
+                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
+                    "IcoPath": "Images/app.png",
+                    "score": 0,
+                    "JsonRPCAction": {
+                        "method": "genParagraph",
+                        "parameters": [finished]
+                    },
+                }
+            ]
+        
         return [
                 {
                     "Title": "Sentence",
                     "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
                     "IcoPath": "Images/app.png",
+                    "score": 2,
                     "JsonRPCAction": {
                         "method": "genSentence",
                         "parameters": [1]
@@ -60,6 +87,7 @@ class HelloWorld(FlowLauncher):
                     "Title": "Paragraph",
                     "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
                     "IcoPath": "Images/app.png",
+                    "score": 1,
                     "JsonRPCAction": {
                         "method": "genParagraph",
                         "parameters": [1]
@@ -69,13 +97,13 @@ class HelloWorld(FlowLauncher):
                     "Title": "Word",
                     "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
                     "IcoPath": "Images/app.png",
+                    "score": 0,
                     "JsonRPCAction": {
                         "method": "genWord",
                         "parameters": [1]
                     }
                 }
         ]
-            
 
     def context_menu(self, data):
         return [
@@ -111,7 +139,11 @@ class HelloWorld(FlowLauncher):
             temp = lorem.words(1)
         pyperclip.copy(temp)
 
-    def determine(self, new):
+    
+    
+    
+    
+    def paragraphs(self):
         i = 0
         
 
