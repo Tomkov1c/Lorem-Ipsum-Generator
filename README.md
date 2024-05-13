@@ -26,12 +26,7 @@ Simply type `lorem` to start. Select what you want to generate. Add a number to 
 # ⬇️ Installation:
 
 ### Flow Lancher:
-![FLow Launcher install screenshot](assets/install_screenshot1.svg)
-
-Type this to have the plugin installed
-```
-pm install steam search
-``` 
+Currently it can only be installed via `git clone` to the plugin directory.
 
 ##
 [!["Buy Me A Coffee"](https://global.discourse-cdn.com/mcneel/uploads/default/original/4X/d/a/1/da14b0fbdaa177932b34765e3a0d1a2bdf450b45.svg)](https://ko-fi.com/tomkliner)
