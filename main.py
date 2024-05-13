@@ -70,7 +70,7 @@ class HelloWorld(FlowLauncher):
                             "score": 0,
                             "JsonRPCAction": {
                                 "method": "genWord",
-                                "parameters": [1],
+                                "parameters": [num],
                             }
                         }]
                 else:
