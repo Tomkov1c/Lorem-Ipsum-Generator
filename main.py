@@ -20,100 +20,123 @@ class HelloWorld(FlowLauncher):
         for char in new:
             if char.isdigit() or char.isupper():
                 newNew += char        
-        
-        if (newNew != ""):
-            finished = int(newNew)
-            syntax = new[0]
-            if syntax == 'p':
+
+        if (query != ""):
+            if new[0] == 'p':
+                if (newNew != ''):
+                    num = int(newNew)
+                    return [{
+                        "Title": "Paragraphs: {fnum}".format(fnum = num),
+                        "SubTitle": "Generate {fnum} paragraphs".format(fnum = num),
+                        "IcoPath": "Images/app.png",
+                        "score": 1,
+                        "JsonRPCAction": {
+                            "method": "genParagraph",
+                            "parameters": [num],
+                        }
+                    }]
+                else:
+                    return [{
+                        "Title": "Paragraph",
+                        "SubTitle": "Add a number to specify the amount of paragraphs you want to generate.",
+                        "IcoPath": "Images/app.png",
+                        "score": 1,
+                        "JsonRPCAction": {
+                            "method": "genParagraph",
+                            "parameters": [1],
+                        }
+                    }]
+            elif new[0] == 's':
                 return [
-                {
-                    "Title": "Paragraphs: {fnum}".format(fnum = finished),
-                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
-                    "IcoPath": "Images/app.png",
-                    "score": 1,
-                    "JsonRPCAction": {
-                        "method": "genParagraph",
-                        "parameters": [finished]
-                    }
-                    
-                },
-                {
-                    "Title": "Words: {fnum}".format(fnum = finished),
-                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
-                    "IcoPath": "Images/app.png",
-                    "score": 0, # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                    "JsonRPCAction": {
-                        "method": "genWord",
-                        "parameters": [finished]
-                    }
-                }
-            ]
-            else: 
+                    {
+                        "Title": "Sentence",
+                        "SubTitle": "Can only generate a sentence.",
+                        "IcoPath": "Images/app.png",
+                        "score": 2,
+                        "JsonRPCAction": {
+                            "method": "genSentence",
+                            "parameters": [1],
+                        }
+                    }]
+                
+            elif new[0] == 'w':
+                if (newNew != ''):
+                    num = int(newNew)
+                    return [
+                        {
+                            "Title": "Words: {fnum}".format(fnum = num),
+                            "SubTitle": "Generate {fnum} words".format(fnum = num),
+                            "IcoPath": "Images/app.png",
+                            "score": 0,
+                            "JsonRPCAction": {
+                                "method": "genWord",
+                                "parameters": [1],
+                            }
+                        }]
+                else:
+                    return [
+                        {
+                            "Title": "Word",
+                            "SubTitle": "Add a number to specify the amount of words you want to generate .",
+                            "IcoPath": "Images/app.png",
+                            "score": 0,
+                            "JsonRPCAction": {
+                                "method": "genWord",
+                                "parameters": [1],
+                            }
+                        }]
+            else:
                 return [
-                {
-                    "Title": "Words: {fnum}".format(fnum = finished),
-                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
-                    "IcoPath": "Images/app.png",
-                    "score": 1,
-                    "JsonRPCAction": {
-                        "method": "genWord",
-                        "parameters": [finished]
-                    },
-                },
-                {
-                    "Title": "Paragraphs: {fnum}".format(fnum = finished),
-                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
-                    "IcoPath": "Images/app.png",
-                    "score": 0,
-                    "JsonRPCAction": {
-                        "method": "genParagraph",
-                        "parameters": [finished]
-                    },
-                }
-            ]
-        
+                    {
+                        "Title": "Incorrect query",
+                        "SubTitle": "Please follow the suggestions.",
+                        "IcoPath": "Images/x.png",
+                        "score": 2,
+                    }]
         return [
-                {
-                    "Title": "Sentence",
-                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
-                    "IcoPath": "Images/app.png",
-                    "score": 2,
-                    "JsonRPCAction": {
-                        "method": "genSentence",
-                        "parameters": [1]
-                    }
-                },
-                {
-                    "Title": "Paragraph",
-                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
-                    "IcoPath": "Images/app.png",
-                    "score": 1,
-                    "JsonRPCAction": {
-                        "method": "genParagraph",
-                        "parameters": [1]
-                    }
-                },
-                {
-                    "Title": "Word",
-                    "SubTitle": "This is where your subtitle goes, press enter to open Flow's url",
-                    "IcoPath": "Images/app.png",
-                    "score": 0,
-                    "JsonRPCAction": {
-                        "method": "genWord",
-                        "parameters": [1]
-                    }
+            {
+                "Title": "Sentence",
+                "SubTitle": "Generate a sentence.                                 Shortcut: \"s\"",
+                "IcoPath": "Images/app.png",
+                "score": 2,
+                "JsonRPCAction": {
+                    "method": "genSentence",
+                    "parameters": [1],
                 }
-        ]
+            },
+            {
+                "Title": "Paragraph",
+                "SubTitle": "Generate a paragraph / paragraphs.         Shortcut: \"p\"",
+                "IcoPath": "Images/app.png",
+                "score": 1,
+                "JsonRPCAction": {
+                    "method": "genParagraph",
+                    "parameters": [1],
+                }
+            },
+            {
+                "Title": "Word",
+                "SubTitle": "Generate a word / string of words.             Shortcut: \"w\"",
+                "IcoPath": "Images/app.png",
+                "score": 0,
+                "JsonRPCAction": {
+                    "method": "genWord",
+                    "parameters": [1],
+                }
+            }
+            ]
+        
+
 
     def context_menu(self, data):
         return [
             {
-                "Title": "Hello World Python's Context menu",
-                "SubTitle": "Press enter to open Flow the plugin's repo in GitHub",
-                "IcoPath": "Images/app.png",
+                "Title": "Please give the plugin a star on GitHub",
+                "SubTitle": "Every star is appreciated. Please 🥺",
+                "IcoPath": "Images/star.png",
                 "JsonRPCAction": {
                     "method": "open_url",
-                    "parameters": ["https://github.com/Flow-Launcher/Flow.Launcher.Plugin.HelloWorldPython"]
+                    "parameters": ["https://github.com/Tomkov1c/Lorem-Ipsum-Generator"]
                 }
             }
         ]
@@ -139,13 +162,9 @@ class HelloWorld(FlowLauncher):
             temp = lorem.words(1)
         pyperclip.copy(temp)
 
-    
-    
-    
-    
-    def paragraphs(self):
-        i = 0
-        
+    def open_url(self, url):
+        webbrowser.open(url)
+  
 
 if __name__ == "__main__":
     HelloWorld()
