@@ -1,1 +1,3 @@
 flowlauncher
+pyperclip
+lorem_text
