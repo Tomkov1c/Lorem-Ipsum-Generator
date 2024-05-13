@@ -4,7 +4,7 @@
 # Lorem Ipsum Generator
 Generate Lorem Ipsum paragraphs / words / sentences from Flow Launcher.
 
-Simply type `lorem` to start. Select what you want to generate. Add a number to specify the amount of ___ generated *(optional)*. 
+Simply type `lorem` to start. Select what you want to generate. Add a number to specify the amount of ___ generated *(optional)*. Press `ctrl + v` to paste.
 
 <p align="center"><img src="./github/screenshot.gif" alt="screenshot"></p>
 
