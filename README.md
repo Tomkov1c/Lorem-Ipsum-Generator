@@ -1,3 +1,34 @@
-This is an example Python plugin project which demonstrates the interaction of request from Flow and then call back to the plugin.
+![hero-image](github/hero.gif)
 
-You can install this plugin via `pm install Hello World Python`
+
+# Lorem Ipsum Generator
+Generate Lorem Ipsum paragraphs / words / sentences from Flow Launcher.
+
+Simply type `lorem` to start. Select what you want to generate. Add a number to specify the amount of ___ generated *(optional)*. 
+
+![screenshot](assets/screenshot.png)
+
+## ⌨️ Features
+
+* Generate Words (custom amount)
+* Generate Paragraphs (custom amount)
+* Generate a Sentence
+
+<br>
+
+## 📅 Planed Features
+
+* Change default sentence length
+* Change default paragraphs length
+
+<br>
+
+# ⬇️ Installation:
+
+### Flow Lancher:
+![FLow Launcher install screenshot](assets/install_screenshot1.svg)
+
+Simply type `pm install steam search` to have the plugin installed
+
+##
+[!["Buy Me A Coffee"](https://global.discourse-cdn.com/mcneel/uploads/default/original/4X/d/a/1/da14b0fbdaa177932b34765e3a0d1a2bdf450b45.svg)](https://ko-fi.com/tomkliner)
