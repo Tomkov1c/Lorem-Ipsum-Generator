@@ -1,0 +1,16 @@
+../../bin/lorem_text.exe,sha256=r2dwsHa3xGcFZiVG_Y5pURiqK2-ANbHZE77_Ct5PZc4,108463
+lorem_text-2.1.dist-info/AUTHORS.rst,sha256=XKU-g7qs6F-XffuBixmJrPavf4ZcBgwJRPicmktfQA0,135
+lorem_text-2.1.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+lorem_text-2.1.dist-info/LICENSE,sha256=_ZsvLu4BsLCCWmppv5guel9znmoaGQmy64WDLpoklTs,1070
+lorem_text-2.1.dist-info/METADATA,sha256=Tcafy_6f4TBu4LHYwEZoO7p9VX56PGGBv2x51XdgVMM,2977
+lorem_text-2.1.dist-info/RECORD,,
+lorem_text-2.1.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lorem_text-2.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+lorem_text-2.1.dist-info/entry_points.txt,sha256=MU_HzmHU0mFs7pnT_TeEG7jjHz6xko7ItcN1DcmcrOY,52
+lorem_text-2.1.dist-info/top_level.txt,sha256=B8hKz4sEZ68kvZWZJseCoij56VSFeRrcZ50gfgBCvNY,11
+lorem_text/__init__.py,sha256=-_nsjr7m34OgLeRye_dLKaQaJljgxc1VkJ0V2L7bMzg,93
+lorem_text/__pycache__/__init__.cpython-312.pyc,,
+lorem_text/__pycache__/cli.cpython-312.pyc,,
+lorem_text/__pycache__/lorem.cpython-312.pyc,,
+lorem_text/cli.py,sha256=L66E7QZLWOHDF95RFw-yeS-kOZao7tQ9RmOufcBDviY,643
+lorem_text/lorem.py,sha256=XHfATwuBIU56V5wy77b9LeYIlyDdZPybo_VZ7W8ttFI,5032

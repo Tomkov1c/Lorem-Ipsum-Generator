@@ -1,0 +1,12 @@
+{
+    "ID": "2f4e384e-76ce-45c3-aea2-b16f5e5c328f",
+    "ActionKeyword": "lorem",
+    "Name": "Lorem Ipsum Generator",
+    "Description": "Generates Lorem Ipsum and copies it to clipboard",
+    "Author": "Tom Kliner",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/Tomkov1c/Lorem-Ipsum-Generator",
+    "IcoPath": "Images\\app.png",
+    "ExecuteFileName": "main.py"
+}
