@@ -1,8 +1,8 @@
 {
-    "ID": "2f4e384e-76ce-45c3-aea2-b16f5e5c328f",
+    "ID": "e483e4f2-ec67-3c54-2aea-f823c5e5f61b",
     "ActionKeyword": "lorem",
     "Name": "Lorem Ipsum Generator",
-    "Description": "Generates Lorem Ipsum and copies it to clipboard",
+    "Description": "Generates Lorem Ipsum and copies it to your clipboard.",
     "Author": "Tom Kliner",
     "Version": "1.0.0",
     "Language": "python",
