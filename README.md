@@ -31,7 +31,7 @@ When I design I usually use Lorem Ipsum because I'm too lazy to write something 
 
 ### Flow Lancher:
 
-Sadly you can only install it via `git clone`-ing it to your plugins directory.
+Sadly you can only install it by `git clone`-ing it to your plugins directory.
 
 ##
 [!["Buy Me A Coffee"](https://global.discourse-cdn.com/mcneel/uploads/default/original/4X/d/a/1/da14b0fbdaa177932b34765e3a0d1a2bdf450b45.svg)](https://ko-fi.com/tomkliner)
