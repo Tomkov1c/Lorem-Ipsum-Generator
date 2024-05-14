@@ -30,12 +30,8 @@ When I design I usually use Lorem Ipsum because I'm too lazy to write something 
 # ⬇️ Installation:
 
 ### Flow Lancher:
-![FLow Launcher install screenshot](assets/install_screenshot1.svg)
 
-Type this to have the plugin installed
-```
-pm install steam search
-``` 
+Sadly you can only install it via `git clone`-ing it to your plugins directory.
 
 ##
 [!["Buy Me A Coffee"](https://global.discourse-cdn.com/mcneel/uploads/default/original/4X/d/a/1/da14b0fbdaa177932b34765e3a0d1a2bdf450b45.svg)](https://ko-fi.com/tomkliner)
