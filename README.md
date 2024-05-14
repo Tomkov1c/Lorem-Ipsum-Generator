@@ -4,7 +4,11 @@
 # Lorem Ipsum Generator
 Generate Lorem Ipsum paragraphs / words / sentences from Flow Launcher.
 
-Simply type `lorem` to start. Select what you want to generate. Add a number to specify the amount of ___ generated *(optional)*. 
+Simply type `lorem` to start. Select what you want to generate. Add a number to specify the amount of ___ generated *(optional)*.
+
+When I design I usually use Lorme Ipsum because I'm too lazy to write something myself. I usually go on a Lorem Ipsum generator i find on google, I wanted to remove the extra step of starting up a web browser, so I made this plugin.
+
+*I know someone is gonna say: "You should acutely write something instead of just using Lorem Ipsum". I agree but sometimes you can get away with it. ;)*
 
 <p align="center"><img src="./github/screenshot.gif" alt="screenshot"></p>
 
