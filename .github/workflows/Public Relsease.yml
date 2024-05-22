@@ -9,6 +9,8 @@ on:
 
 jobs:
   publish:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     env:
       python_ver: 3.8
