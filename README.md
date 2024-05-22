@@ -1,4 +1,4 @@
-<p align="center"><img src="./github/hero.gif" alt="screenshot"></p>
+<p align="center"><img src="./.github/hero.gif" alt="screenshot"></p>
 
 
 # Lorem Ipsum Generator
@@ -10,7 +10,7 @@ When I design I usually use Lorem Ipsum because I'm too lazy to write something 
 
 *I know someone is gonna say: "You should acutely write something instead of just using Lorem Ipsum". I agree but sometimes you can get away with it. ;)*
 
-<p align="center"><img src="./github/screenshot.gif" alt="screenshot"></p>
+<p align="center"><img src="./.github/screenshot.gif" alt="screenshot"></p>
 
 ## ⌨️ Features
 
