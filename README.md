@@ -26,7 +26,12 @@ Simply type `lorem` to start. Select what you want to generate. Add a number to 
 # ⬇️ Installation:
 
 ### Flow Lancher:
-Currently it can only be installed via `git clone` to the plugin directory.
+Type this in the flow launcher and press enter.
+```
+pm install lorem
+```
 
 ##
 [!["Buy Me A Coffee"](https://global.discourse-cdn.com/mcneel/uploads/default/original/4X/d/a/1/da14b0fbdaa177932b34765e3a0d1a2bdf450b45.svg)](https://ko-fi.com/tomkliner)
+
+Icon by [Icon8](https://icons8.com/icon/FfTWsXw7mVqG/align-left)
