@@ -1,50 +1,52 @@
-name: Publish Release
+name: Publish
 
 permissions:
   contents: write
-  
+
 on:
-  push:
-	branches: [ main ]
-	paths:
-	- 'Lorem Ipsum C#/plugin.json'
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
   workflow_dispatch:
 
 jobs:
-  publish:
+  build:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.pull_request.merged }}  
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
 
-	runs-on: windows-latest
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
 
-	steps:
-	  - uses: actions/checkout@v3
+      - name: Get version
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: 'Lorem Ipsum C#/plugin.json'
+          prop_path: 'Version'
 
-	  - name: Setup .NET
-		uses: actions/setup-dotnet@v3
-		with:
-		  dotnet-version: 7.0.x
+      - run: echo ${{steps.version.outputs.prop}}
+      
+      - name: Restore dependencies
+        run: dotnet restore
 
-	  - name: get version
-		id: version
-		uses: notiz-dev/github-action-json-property@release
-		with:
-		  path: 'Lorem Ipsum C#//plugin.json'
-		  prop_path: 'Version'
-
-	  - run: echo ${{steps.version.outputs.prop}}
-
-	  - name: Restore dependencies
-		run: |
-		  cd src
-		  dotnet restore
-
-	  - name: Build
-		run: |
-		  cd src
-		  dotnet publish -c Release -r win-x64 --no-self-contained Flow.Launcher.Plugin.Notion.csproj
-		  7z a -tzip "Flow.Launcher.Plugin.LoremIpsumGenerator.zip" "./bin/Debug*"
-
-	  - name: Publish
-		uses: softprops/action-gh-release@v1
-		with:
-		  files: "src/Flow.Launcher.Plugin.LoremIpsumGenerator.zip"
-		  tag_name: "v${{steps.version.outputs.prop}}"
+      - name: Build
+        run: |
+          cd Flow.Launcher.Plugin.OneNote
+          dotnet publish -c Release -r win-x64 --no-self-contained "Lorem Ipsum C#.csproj"
+          7z a -tzip "Flow.Launcher.Plugin.LoremIpsumGenerator.zip" "./bin/Release/win-x64/publish/*"
+          
+      - name: Publish
+        uses: softprops/action-gh-release@v1
+        with:
+          files: "Flow.Launcher.Plugin.LoremIpsumGenerator/Flow.Launcher.Plugin.LoremIpsumGenerator.zip"
+          tag_name: "v${{steps.version.outputs.prop}}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
