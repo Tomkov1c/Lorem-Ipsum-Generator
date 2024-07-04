@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lorem Ipsum C#", "Lorem Ipsum C#\Lorem Ipsum C#.csproj", "{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B50C6E58-1C15-4D57-9465-1AB7A3606514}
+	EndGlobalSection
+EndGlobal

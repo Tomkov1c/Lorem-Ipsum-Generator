@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "rNIxlZ+kv2ySh0qJ6gFT+4RWUO0WHEp9YfeyoWTchl0z5+XnULFZ8Mvi8BkDyWtt5lvuIhYDfBq467V4DYfQ4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Lorem Ipsum C#\\Lorem Ipsum C#\\Lorem Ipsum C#.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gamin\\.nuget\\packages\\flow.launcher.plugin\\4.1.0\\flow.launcher.plugin.4.1.0.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\interop.microsoft.office.interop.onenote\\1.1.0.2\\interop.microsoft.office.interop.onenote.1.1.0.2.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\modernwpfui\\0.9.6\\modernwpfui.0.9.6.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\odotocodot.onenote.linq\\1.1.0\\odotocodot.onenote.linq.1.1.0.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\system.drawing.common\\8.0.6\\system.drawing.common.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
