@@ -39,7 +39,7 @@ jobs:
 
       - name: Build
         run: |
-          cd Flow.Launcher.Plugin.LoremIpsumGenerator
+          cd "Lorem Ipsum C#"
           dotnet publish -c Release -r win-x64 --no-self-contained "Lorem Ipsum C#.csproj"
           7z a -tzip "Flow.Launcher.Plugin.LoremIpsumGenerator.zip" "./bin/Debug/*"
           
