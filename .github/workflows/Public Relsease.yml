@@ -39,9 +39,9 @@ jobs:
 
       - name: Build
         run: |
-          cd Flow.Launcher.Plugin.OneNote
+          cd Flow.Launcher.Plugin.LoremIpsumGenerator
           dotnet publish -c Release -r win-x64 --no-self-contained "Lorem Ipsum C#.csproj"
-          7z a -tzip "Flow.Launcher.Plugin.LoremIpsumGenerator.zip" "./bin/Release/win-x64/publish/*"
+          7z a -tzip "Flow.Launcher.Plugin.LoremIpsumGenerator.zip" "./bin/Debug/*"
           
       - name: Publish
         uses: softprops/action-gh-release@v1
