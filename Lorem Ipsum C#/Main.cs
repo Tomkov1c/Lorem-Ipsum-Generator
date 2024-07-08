@@ -17,69 +17,81 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
 
         string[] loremIpsumWords = new string[]
         {
+            "laborum",
+            "eveniet",
+            "sunt",
+            "iure",
+            "nobis",
+            "odio",
+            "quasi",
+            "aut",
+            "vel",
+            "odit",
+            "tempore",
+            "facilis",
+            "neque",
+            "nihil",
+            "vitae",
+            "vero",
+            "ipsum",
+            "nisi",
+            "animi",
+            "cumque",
+            "velit",
+            "modi",
+            "natus",
+            "iusto",
+            "illo",
+            "sed",
+            "tempora",
+            "ratione",
+            "rem",
+            "sint",
+            "unde",
+            "qui",
+            "amet",
+            "quo",
+            "culpa",
+            "libero",
+            "ipsa",
+            "dicta",
+            "nesciunt",
+            "autem",
+            "minima",
+            "ipsam",
+            "ullam",
+            "totam",
+            "quis",
+            "dolores",
+            "harum",
+            "quia",
+            "ea",
+            "quas",
+            "quam",
+            "quae",
+            "hic",
+            "ut",
+            "ad",
+            "at",
+            "in",
+            "id",
+            "quos",
+            "sit",
+            "eos",
+            "alias",
+            "dolore",
             "lorem",
             "ipsum",
             "dolor",
             "sit",
             "amet",
-            "consectetur",
-            "adipiscing",
             "elit",
             "sed",
-            "do",
-            "eiusmod",
-            "tempor",
-            "incididunt",
             "ut",
-            "labore",
-            "et",
-            "dolore",
-            "magna",
-            "aliqua",
-            "enim",
-            "ad",
-            "minim",
-            "veniam",
-            "quis",
-            "nostrud",
-            "exercitation",
-            "ullamco",
-            "laboris",
-            "nisi",
-            "aliquip",
-            "ex",
-            "ea",
-            "commodo",
-            "consequat",
-            "duis",
-            "aute",
-            "irure",
-            "reprehenderit",
-            "voluptate",
-            "velit",
-            "esse",
-            "cillum",
-            "eu",
-            "fugiat",
-            "nulla",
-            "pariatur",
-            "excepteur",
-            "sint",
-            "occaecat",
-            "cupidatat",
-            "non",
-            "proident",
-            "sunt",
-            "culpa",
-            "qui",
-            "officia",
-            "deserunt",
-            "mollit",
-            "anim",
-            "id",
-            "est",
-            "laborum"
+            "et"
         };
+
+
 
         public void Init(PluginInitContext context)
         {
@@ -115,7 +127,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
                         results.Add(new Result
                         {
                             Title = "Paragraphs: " + newNew,
-                            SubTitle = "Generate " + newNew + " paragraphs",
+                            SubTitle = "Generate a paragraph with " + newNew + " sentences.",
                             IcoPath = "images/app.png",
                             Action = clipboardParagraph,
                             Score = 5000
@@ -128,7 +140,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
                         results.Add(new Result
                         {
                             Title = "Paragraph",
-                            SubTitle = "Generate a paragraph",
+                            SubTitle = "Generates a paragraph. Add a number to specify the amount of sentences in the paragraph.",
                             IcoPath = "images/app.png",
                             Action = clipboardParagraph,
                             Score = 5000
@@ -146,8 +158,8 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
 
                         results.Add(new Result
                         {
-                            Title = "Words in a sentence: " + newNew,
-                            SubTitle = "Generate a patragraph with " + newNew + " words",
+                            Title = "Sentences with: " + newNew + " words.",
+                            SubTitle = "Generate a paragraph with " + newNew + " sentences.",
                             IcoPath = "images/app.png",
                             Action = clipboardSentence,
                             Score = 5000
@@ -160,7 +172,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
                         results.Add(new Result
                         {
                             Title = "Sentence",
-                            SubTitle = "Generate a sentence",
+                            SubTitle = "Generates a sentence. Add a number to specify the amount of words in the sentence.",
                             IcoPath = "images/app.png",
                             Action = clipboardSentence,
                             Score = 5000
@@ -177,7 +189,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
                         results.Add(new Result
                         {
                             Title = "Words: " + newNew,
-                            SubTitle = "Generate " + newNew + " words",
+                            SubTitle = "Generate a string of " + newNew + " words.",
                             IcoPath = "images/app.png",
                             Action = clipboardWord,
                             Score = 5000
@@ -190,9 +202,39 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
                         results.Add(new Result
                         {
                             Title = "Word",
-                            SubTitle = "Generate a word",
+                            SubTitle = "Generates a word. Add a number to specify the amount of words.",
                             IcoPath = "images/app.png",
                             Action = clipboardWord,
+                            Score = 5000
+                        });
+                    }
+                }
+                else if (_new[0] == 't')
+                {
+                    if (newNew != "")
+                    {
+                        results.Clear();
+                        amount = Convert.ToInt32(newNew);
+
+                        results.Add(new Result
+                        {
+                            Title = "Title with: " + newNew + " words.",
+                            SubTitle = "Generate a title with: " + newNew + "words.",
+                            IcoPath = "images/app.png",
+                            Action = clipboardTitle,
+                            Score = 5000
+                        });
+                    }
+                    else
+                    {
+                        results.Clear();
+
+                        results.Add(new Result
+                        {
+                            Title = "Title",
+                            SubTitle = "Generates a title (Like a newspaper headline). Add a number to specify the amount of words in the the title.",
+                            IcoPath = "images/app.png",
+                            Action = clipboardTitle,
                             Score = 5000
                         });
                     }
@@ -215,7 +257,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
                 results.Add(new Result
                 {
                     Title = "Sentence",
-                    SubTitle = "Generate a sentence.",
+                    SubTitle = "Generates a sentence. Add a number to specify the amount of words in the sentence.",
                     IcoPath = "images/app.png",
                     Action = clipboardSentence,
                     Score = 5000
@@ -223,7 +265,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
                 results.Add(new Result
                 {
                     Title = "Paragraph",
-                    SubTitle = "Generate a paragraph / paragraphs.",
+                    SubTitle = "Generates a paragraph. Add a number to specify the amount of sentences in the paragraph.",
                     IcoPath = "images/app.png",
                     Action = clipboardParagraph,
                     Score = 5000
@@ -231,9 +273,17 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
                 results.Add(new Result
                 {
                     Title = "Word",
-                    SubTitle = "Generate a word / string of words.",
+                    SubTitle = "Generates a word. Add a number to specify the amount of words.",
                     IcoPath = "images/app.png",
                     Action = clipboardWord,
+                    Score = 5000
+                });
+                results.Add(new Result
+                {
+                    Title = "Title",
+                    SubTitle = "Generates a title (Like a newspaper headline). Add a number to specify the amount of words in the the title.",
+                    IcoPath = "images/app.png",
+                    Action = clipboardTitle,
                     Score = 5000
                 });
             }
@@ -256,7 +306,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
             }
             for (int i = 0; i < amount; i++)
             {
-                output += genSentence(0) + "\n";
+                output += genSentence(0) + " ";
             }
             output += "\n";
             Clipboard.SetText(output);
@@ -274,22 +324,43 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
             amount = 1;
             return true;
         }
+        public bool clipboardTitle(ActionContext context)
+        {
+            string output = genTitle(amount);
+            Clipboard.SetText(output);
+            amount = 1;
+            return true;
+        }
 
         public string genSentence(int length)
         {
             string output = "";
+            string temp = "";
+            output = genWord();
+            string privWord = " ";
             Random rng = new Random();
             if (length <= 1) 
             { 
                 length = rng.Next(9, 18); 
             }
 
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < (length - 1); i++)
             {
                 int needsComma = rng.Next(10);
-                output += genWord();
+                temp = genWord();
 
-                if (i != (length - 1))
+                if ((temp == privWord) || (temp.Length == privWord.Length) || (temp[0] == privWord[0]))
+                {
+                    i--;
+                    continue;
+                }else
+                {
+                    output += temp;
+                    privWord = temp;
+                }
+
+
+                if (i != (length - 2))
                 {
                     if (needsComma == 7)
                     {
@@ -324,20 +395,43 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
 
             return output;
         }
-        public string genParagraph()
+        public string genTitle(int length)
         {
             string output = "";
+            string temp = "";
+            output = genWord();
+            string privWord = " ";
             Random rng = new Random();
-            int howMany = rng.Next(3, 17);
-
-            for (int i = 0; i < howMany; i++)
+            if (length <= 1)
             {
-                output += genSentence(0);
+                length = rng.Next(9, 18);
             }
 
+            for (int i = 0; i < (length - 1); i++)
+            {
+                temp = genWord();
+
+                if ((temp == privWord) || (temp.Length == privWord.Length) || (temp[0] == privWord[0]))
+                {
+                    i--;
+                    continue;
+                }
+                else
+                {
+                    output += temp;
+                    privWord = temp;
+                }
+
+
+                if (i != (length - 2))
+                {
+                    output += " ";
+                }
+
+            }
+            output = char.ToUpper(output[0]) + output.Substring(1);
             return output;
         }
-
 
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rNIxlZ+kv2ySh0qJ6gFT+4RWUO0WHEp9YfeyoWTchl0z5+XnULFZ8Mvi8BkDyWtt5lvuIhYDfBq467V4DYfQ4g==",
+  "dgSpecHash": "edcfLRtbCgKpqvy9b4q3+pizCJHky7ZkUTALDr0SvjYtlrQvRIAr2Y5EV24S32oyavGeYW05F7Qd3ueO4vTelQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Lorem Ipsum C#\\Lorem Ipsum C#\\Lorem Ipsum C#.csproj",
+  "projectFilePath": "C:\\Users\\gamin\\AppData\\Local\\FlowLauncher\\app-1.18.0\\Plugins\\Lorem-Ipsum-Generator\\Lorem Ipsum C#\\Lorem Ipsum C#.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gamin\\.nuget\\packages\\flow.launcher.plugin\\4.1.0\\flow.launcher.plugin.4.1.0.nupkg.sha512",
     "C:\\Users\\gamin\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",

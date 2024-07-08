@@ -14,3 +14,20 @@ C:\Users\gamin\AppData\Roaming\FlowLauncher\Plugins\Lorem Ipsum C#\Lorem Ipsum C
 C:\Users\gamin\AppData\Roaming\FlowLauncher\Plugins\Lorem Ipsum C#\Lorem Ipsum C#\obj\Debug\refint\Flow.Launcher.Plugin.LoremIpsumGenerator.dll
 C:\Users\gamin\AppData\Roaming\FlowLauncher\Plugins\Lorem Ipsum C#\Lorem Ipsum C#\obj\Debug\Flow.Launcher.Plugin.LoremIpsumGenerator.pdb
 C:\Users\gamin\AppData\Roaming\FlowLauncher\Plugins\Lorem Ipsum C#\Lorem Ipsum C#\obj\Debug\ref\Flow.Launcher.Plugin.LoremIpsumGenerator.dll
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\bin\Debug\plugin.json
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\bin\Debug\Images\app.png
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\bin\Debug\Images\star.png
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\bin\Debug\Images\x.png
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\bin\Debug\Flow.Launcher.Plugin.LoremIpsumGenerator.deps.json
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\bin\Debug\Flow.Launcher.Plugin.LoremIpsumGenerator.dll
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\bin\Debug\Flow.Launcher.Plugin.LoremIpsumGenerator.pdb
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\Lorem Ipsum C#.csproj.AssemblyReference.cache
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\Lorem Ipsum C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\Lorem Ipsum C#.AssemblyInfoInputs.cache
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\Lorem Ipsum C#.AssemblyInfo.cs
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\Lorem Ipsum C#.csproj.CoreCompileInputs.cache
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\Lorem Ipsum C#.sourcelink.json
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\Flow.Launcher.Plugin.LoremIpsumGenerator.dll
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\refint\Flow.Launcher.Plugin.LoremIpsumGenerator.dll
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\Flow.Launcher.Plugin.LoremIpsumGenerator.pdb
+C:\Users\gamin\AppData\Local\FlowLauncher\app-1.18.0\Plugins\Lorem-Ipsum-Generator\Lorem Ipsum C#\obj\Debug\ref\Flow.Launcher.Plugin.LoremIpsumGenerator.dll
