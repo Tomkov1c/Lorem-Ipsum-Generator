@@ -1,4 +1,4 @@
-<p align="center"><img src="./.github/NewBannerV1.jpg" alt="screenshot"></p>
+<p align="center" style="width: 70%; margin: 0 auto;"><img src="./.github/NewBannerV1.jpg" alt="screenshot"></p>
 
 
 # Lorem Ipsum Generator
