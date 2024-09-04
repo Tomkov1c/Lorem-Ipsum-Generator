@@ -4,7 +4,7 @@
 	"Name": "Lorem Ipsum Generator",
 	"Description": "Generates Lorem Ipsum and copies it to your clipboard.",
 	"Author": "Tom Kliner",
-	"Version": "2.0.0",
+	"Version": "2.1.0",
 	"Language": "csharp",
 	"Website": "https://github.com/Tomkov1c/Lorem-Ipsum-Generator",
 	"IcoPath": "Images\\app.png",
