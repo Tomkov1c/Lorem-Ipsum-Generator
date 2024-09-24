@@ -4,11 +4,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows;
+using Flow.Launcher.Plugin.LoremIpsumGenerator.Classes;
+using Flow.Launcher.Plugin.LoremIpsumGenerator.Views;
 using Flow.Launcher.Plugin;
+using System.Configuration;
+using Humanizer.Configuration;
 
 namespace Flow.Launcher.Plugin.LoremIpsumGenerator
 {
-    public class MyFlowPlugin : IPlugin
+    public class MyFlowPlugin : IPlugin, ISettingProvider
     {
 
         int amount = 1;
@@ -92,9 +96,15 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
         };
 
 
+        private PluginInitContext context;
+
+        private Settings settings;
 
         public void Init(PluginInitContext context)
         {
+            this.context = context;
+
+            settings = context.API.LoadSettingJsonStorage<Settings>();
         }
 
         public List<Result> Query(Query query)
@@ -433,5 +443,9 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator
             return output;
         }
 
+        public Control CreateSettingPanel()
+        {
+            return new PluginSettings();
+        }
     }
 }
