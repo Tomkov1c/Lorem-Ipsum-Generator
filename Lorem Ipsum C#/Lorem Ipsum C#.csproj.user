@@ -5,9 +5,21 @@
     <Compile Update="Views\Settings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Types\General.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Types\Sentence.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\Settings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Types\General.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Types\Sentence.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
