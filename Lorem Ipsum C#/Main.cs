@@ -4,13 +4,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows;
-using Flow.Launcher.Plugin.LoremIpsumGenerator.Classes;
-using Flow.Launcher.Plugin.LoremIpsumGenerator.Views;
+using Flow.Launcher.Plugin.Lorem.Classes;
+using Flow.Launcher.Plugin.Lorem.Views;
 using Flow.Launcher.Plugin;
 using System.Configuration;
 using Humanizer.Configuration;
 
-namespace Flow.Launcher.Plugin.LoremIpsumGenerator
+namespace Flow.Launcher.Plugin.Lorem
 {
     public class MyFlowPlugin : IPlugin, ISettingProvider
     {

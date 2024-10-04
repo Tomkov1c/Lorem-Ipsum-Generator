@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Flow.Launcher.Plugin.LoremIpsumGenerator;
+using Flow.Launcher.Plugin.Lorem;
 
-namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Views
+namespace Flow.Launcher.Plugin.Lorem.Views
 {
     /// <summary>
     /// Interaction logic for Settings.xaml
@@ -24,7 +24,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Views
 
         public PluginSettings()
         {
-
+            InitializeComponent();
         }
     }
 }

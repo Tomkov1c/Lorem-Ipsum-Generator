@@ -8,5 +8,5 @@
 	"Language": "csharp",
 	"Website": "https://github.com/Tomkov1c/Lorem-Ipsum-Generator",
 	"IcoPath": "Images\\app.png",
-	"ExecuteFileName": "Flow.Launcher.Plugin.LoremIpsumGenerator.dll"
+	"ExecuteFileName": "Flow.Launcher.Plugin.Lorem.dll"
 }

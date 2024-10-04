@@ -1,5 +1,5 @@
-﻿Flow.Launcher.Plugin.LoremIpsumGenerator
-1.0.0.0
+﻿Flow.Launcher.Plugin.Lorem
+
 
 library
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 
 1-743272991
 41634950838
-6-1281376378
+4598492923
 215-364513548
 Views\Settings.xaml;
 

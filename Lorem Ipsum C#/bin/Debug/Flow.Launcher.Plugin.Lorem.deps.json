@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "Flow.Launcher.Plugin.LoremIpsumGenerator/1.0.0": {
+      "Flow.Launcher.Plugin.Lorem/1.0.0": {
         "dependencies": {
           "Flow.Launcher.Plugin": "4.1.0",
           "Humanizer.Core": "2.14.1",
@@ -15,7 +15,7 @@
           "System.Drawing.Common": "8.0.6"
         },
         "runtime": {
-          "Flow.Launcher.Plugin.LoremIpsumGenerator.dll": {}
+          "Flow.Launcher.Plugin.Lorem.dll": {}
         }
       },
       "Flow.Launcher.Plugin/4.1.0": {
@@ -509,7 +509,7 @@
     }
   },
   "libraries": {
-    "Flow.Launcher.Plugin.LoremIpsumGenerator/1.0.0": {
+    "Flow.Launcher.Plugin.Lorem/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

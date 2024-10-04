@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0-windows</TargetFramework>
-    <AssemblyName>Flow.Launcher.Plugin.LoremIpsumGenerator</AssemblyName>
-    <PackageId>Flow.Launcher.Plugin.LoremIpsumGenerator</PackageId>
+    <AssemblyName>Flow.Launcher.Plugin.Lorem</AssemblyName>
+    <PackageId>Flow.Launcher.Plugin.Lorem</PackageId>
     <Authors>Odotocodot</Authors>
     <PackageProjectUrl>https://github.com/Odotocodot/Flow.Launcher.Plugin.LoremIpsumGenerator</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Odotocodot/Flow.Launcher.Plugin.LoremIpsumGenerator</RepositoryUrl>
