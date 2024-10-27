@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     "net7.0-windows7.0": {
-      "Flow.Launcher.Plugin/4.1.0": {
+      "Flow.Launcher.Plugin/4.4.0": {
         "type": "package",
         "dependencies": {
-          "JetBrains.Annotations": "2022.3.1",
+          "JetBrains.Annotations": "2024.2.0",
           "PropertyChanged.Fody": "3.4.0"
         },
         "compile": {
@@ -46,7 +46,7 @@
           "lib/netstandard2.0/Interop.Microsoft.Office.Interop.OneNote.dll": {}
         }
       },
-      "JetBrains.Annotations/2022.3.1": {
+      "JetBrains.Annotations/2024.2.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/JetBrains.Annotations.dll": {
@@ -536,7 +536,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Drawing.Common/8.0.6": {
+      "System.Drawing.Common/8.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "8.0.0"
@@ -558,15 +558,15 @@
     }
   },
   "libraries": {
-    "Flow.Launcher.Plugin/4.1.0": {
-      "sha512": "ozqPl9S8te+mC6CMVyOts+04JAns2t5WrJa0g/U/tMoxVIZwhBoeg6oB64fg6nvjauIvUR3EMV+vZFKHccrL5w==",
+    "Flow.Launcher.Plugin/4.4.0": {
+      "sha512": "CJnSFwgCVCvn+rslmVKCiZxaicZNHVWpJhhtDD24SpcDOSox++KSGbralykfkMOkeppJ/6sizxs4cgqWfOlJaw==",
       "type": "package",
-      "path": "flow.launcher.plugin/4.1.0",
+      "path": "flow.launcher.plugin/4.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Readme.md",
-        "flow.launcher.plugin.4.1.0.nupkg.sha512",
+        "flow.launcher.plugin.4.4.0.nupkg.sha512",
         "flow.launcher.plugin.nuspec",
         "lib/net7.0-windows7.0/Flow.Launcher.Plugin.dll"
       ]
@@ -635,16 +635,17 @@
         "lib/netstandard2.0/Interop.Microsoft.Office.Interop.OneNote.dll"
       ]
     },
-    "JetBrains.Annotations/2022.3.1": {
-      "sha512": "11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+    "JetBrains.Annotations/2024.2.0": {
+      "sha512": "GNnqCFW/163p1fOehKx0CnAqjmpPrUSqrgfHM6qca+P+RN39C9rhlfZHQpJhxmQG/dkOYe/b3Z0P8b6Kv5m1qw==",
       "type": "package",
-      "path": "jetbrains.annotations/2022.3.1",
+      "path": "jetbrains.annotations/2024.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
-        "jetbrains.annotations.2022.3.1.nupkg.sha512",
+        "jetbrains.annotations.2024.2.0.nupkg.sha512",
         "jetbrains.annotations.nuspec",
+        "lib/JetBrains.Annotations.2024.2.0.snupkg",
         "lib/net20/JetBrains.Annotations.dll",
         "lib/net20/JetBrains.Annotations.xml",
         "lib/netstandard1.0/JetBrains.Annotations.deps.json",
@@ -1301,10 +1302,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Drawing.Common/8.0.6": {
-      "sha512": "aSwRnJzz6fZ73JvWMMG0KvBwOnXsBTFtfHLriQyAPrDIZ+NrDfl15GWbO/A35k0dtH77D7jfxzEcFF7RONtU/w==",
+    "System.Drawing.Common/8.0.10": {
+      "sha512": "MdajRp3P+FOlThgY6FBjAqnmLiVl5t2yWEC/2AsDMqx1zYbJG3G5TnscFBQ4obqcaGqvN5UnhQHSFaJFG2HftQ==",
       "type": "package",
-      "path": "system.drawing.common/8.0.6",
+      "path": "system.drawing.common/8.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1336,7 +1337,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "system.drawing.common.8.0.6.nupkg.sha512",
+        "system.drawing.common.8.0.10.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1344,11 +1345,11 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "Flow.Launcher.Plugin >= 4.1.0",
+      "Flow.Launcher.Plugin >= 4.4.0",
       "Humanizer.Core >= 2.14.1",
       "ModernWpfUI >= 0.9.6",
       "Odotocodot.OneNote.Linq >= 1.1.0",
-      "System.Drawing.Common >= 8.0.6"
+      "System.Drawing.Common >= 8.0.10"
     ]
   },
   "packageFolders": {
@@ -1398,7 +1399,7 @@
         "dependencies": {
           "Flow.Launcher.Plugin": {
             "target": "Package",
-            "version": "[4.1.0, )"
+            "version": "[4.4.0, )"
           },
           "Humanizer.Core": {
             "target": "Package",
@@ -1414,7 +1415,7 @@
           },
           "System.Drawing.Common": {
             "target": "Package",
-            "version": "[8.0.6, )"
+            "version": "[8.0.10, )"
           }
         },
         "imports": [

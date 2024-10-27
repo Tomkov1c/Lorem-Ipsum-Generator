@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Flow.Launcher.Plugin.Lorem.Views"
              mc:Ignorable="d">
+    
     <Grid>
         <StackPanel Orientation="Vertical" Margin="30">
             <StackPanel Orientation="Horizontal">
@@ -24,6 +25,7 @@
             <Frame HorizontalAlignment="Stretch" x:Name="SettingsFrame"
                    MaxHeight="350" Margin="0, 15, 0, 0"/>
         </StackPanel>
-        
+
     </Grid>
 </UserControl>
+    

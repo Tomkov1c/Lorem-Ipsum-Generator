@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Odotocodot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ca9ddf797f0e3971a0a648cc8d590a1c811d774")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b7b9ced6ca86b37535c59e30401d34447cfbccd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Flow.Launcher.Plugin.Lorem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Flow.Launcher.Plugin.Lorem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

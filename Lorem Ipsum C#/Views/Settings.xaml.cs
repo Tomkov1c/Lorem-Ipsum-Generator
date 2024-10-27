@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Flow.Launcher.Plugin.Lorem;
 using Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types;
+using ModernWpf;
 
 namespace Flow.Launcher.Plugin.Lorem.Views
 {
@@ -26,7 +27,6 @@ namespace Flow.Launcher.Plugin.Lorem.Views
         public PluginSettings()
         {
             InitializeComponent();
-
             SettingsFrame.Navigate(new General());
         }
 

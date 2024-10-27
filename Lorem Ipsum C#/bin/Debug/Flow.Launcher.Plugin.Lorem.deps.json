@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v7.0": {
       "Flow.Launcher.Plugin.Lorem/1.0.0": {
         "dependencies": {
-          "Flow.Launcher.Plugin": "4.1.0",
+          "Flow.Launcher.Plugin": "4.4.0",
           "Humanizer.Core": "2.14.1",
           "ModernWpfUI": "0.9.6",
           "Odotocodot.OneNote.Linq": "1.1.0",
-          "System.Drawing.Common": "8.0.6"
+          "System.Drawing.Common": "8.0.10"
         },
         "runtime": {
           "Flow.Launcher.Plugin.Lorem.dll": {}
         }
       },
-      "Flow.Launcher.Plugin/4.1.0": {
+      "Flow.Launcher.Plugin/4.4.0": {
         "dependencies": {
-          "JetBrains.Annotations": "2022.3.1",
+          "JetBrains.Annotations": "2024.2.0",
           "PropertyChanged.Fody": "3.4.0"
         },
         "runtime": {
@@ -47,11 +47,11 @@
           }
         }
       },
-      "JetBrains.Annotations/2022.3.1": {
+      "JetBrains.Annotations/2024.2.0": {
         "runtime": {
           "lib/netstandard2.0/JetBrains.Annotations.dll": {
             "assemblyVersion": "4242.42.42.42",
-            "fileVersion": "2022.3.1.0"
+            "fileVersion": "2024.2.0.0"
           }
         }
       },
@@ -467,7 +467,7 @@
         "dependencies": {
           "Interop.Microsoft.Office.Interop.OneNote": "1.1.0.2",
           "System.Collections.Immutable": "8.0.0",
-          "System.Drawing.Common": "8.0.6"
+          "System.Drawing.Common": "8.0.10"
         },
         "runtime": {
           "lib/netstandard2.0/Odotocodot.OneNote.Linq.dll": {
@@ -495,14 +495,14 @@
           }
         }
       },
-      "System.Drawing.Common/8.0.6": {
+      "System.Drawing.Common/8.0.10": {
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "8.0.0"
         },
         "runtime": {
           "lib/net7.0/System.Drawing.Common.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.624.26909"
+            "fileVersion": "8.0.1024.46803"
           }
         }
       }
@@ -514,12 +514,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Flow.Launcher.Plugin/4.1.0": {
+    "Flow.Launcher.Plugin/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ozqPl9S8te+mC6CMVyOts+04JAns2t5WrJa0g/U/tMoxVIZwhBoeg6oB64fg6nvjauIvUR3EMV+vZFKHccrL5w==",
-      "path": "flow.launcher.plugin/4.1.0",
-      "hashPath": "flow.launcher.plugin.4.1.0.nupkg.sha512"
+      "sha512": "sha512-CJnSFwgCVCvn+rslmVKCiZxaicZNHVWpJhhtDD24SpcDOSox++KSGbralykfkMOkeppJ/6sizxs4cgqWfOlJaw==",
+      "path": "flow.launcher.plugin/4.4.0",
+      "hashPath": "flow.launcher.plugin.4.4.0.nupkg.sha512"
     },
     "Fody/6.5.1": {
       "type": "package",
@@ -542,12 +542,12 @@
       "path": "interop.microsoft.office.interop.onenote/1.1.0.2",
       "hashPath": "interop.microsoft.office.interop.onenote.1.1.0.2.nupkg.sha512"
     },
-    "JetBrains.Annotations/2022.3.1": {
+    "JetBrains.Annotations/2024.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
-      "path": "jetbrains.annotations/2022.3.1",
-      "hashPath": "jetbrains.annotations.2022.3.1.nupkg.sha512"
+      "sha512": "sha512-GNnqCFW/163p1fOehKx0CnAqjmpPrUSqrgfHM6qca+P+RN39C9rhlfZHQpJhxmQG/dkOYe/b3Z0P8b6Kv5m1qw==",
+      "path": "jetbrains.annotations/2024.2.0",
+      "hashPath": "jetbrains.annotations.2024.2.0.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/8.0.0": {
       "type": "package",
@@ -584,12 +584,12 @@
       "path": "system.collections.immutable/8.0.0",
       "hashPath": "system.collections.immutable.8.0.0.nupkg.sha512"
     },
-    "System.Drawing.Common/8.0.6": {
+    "System.Drawing.Common/8.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aSwRnJzz6fZ73JvWMMG0KvBwOnXsBTFtfHLriQyAPrDIZ+NrDfl15GWbO/A35k0dtH77D7jfxzEcFF7RONtU/w==",
-      "path": "system.drawing.common/8.0.6",
-      "hashPath": "system.drawing.common.8.0.6.nupkg.sha512"
+      "sha512": "sha512-MdajRp3P+FOlThgY6FBjAqnmLiVl5t2yWEC/2AsDMqx1zYbJG3G5TnscFBQ4obqcaGqvN5UnhQHSFaJFG2HftQ==",
+      "path": "system.drawing.common/8.0.10",
+      "hashPath": "system.drawing.common.8.0.10.nupkg.sha512"
     }
   }
 }

@@ -5,27 +5,67 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types"
              mc:Ignorable="d">
-    <Grid>
-        <Border CornerRadius="4" MaxHeight="70" VerticalAlignment="Top" Margin="0, 1.5">
-            <StackPanel Margin="15, 10">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="24" />
-                        <ColumnDefinition Width="auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Canvas Grid.Column="0" Width="23" Height="23" VerticalAlignment="Center">
-                        <Viewbox Width="20" VerticalAlignment="Center">
-                            <Path VerticalAlignment="Center" Fill="{StaticResource BasicLabelColor}" Data="F1 M48,48z M0,0z M7.4765625,5.9785156A1.50015,1.50015,0,0,0,6,7.5L6,40.5A1.50015,1.50015,0,1,0,9,40.5L9,25.121094 15.439453,31.560547A1.50015,1.50015,0,1,0,17.560547,29.439453L13.621094,25.5 34.378906,25.5 30.439453,29.439453A1.50015,1.50015,0,1,0,32.560547,31.560547L39,25.121094 39,40.5A1.50015,1.50015,0,1,0,42,40.5L42,7.5A1.50015,1.50015,0,1,0,39,7.5L39,22.878906 32.560547,16.439453A1.50015,1.50015,0,1,0,30.439453,18.560547L34.378906,22.5 13.621094,22.5 17.560547,18.560547A1.50015,1.50015,0,1,0,15.439453,16.439453L9,22.878906 9,7.5A1.50015,1.50015,0,0,0,7.4765625,5.9785156z" />
-                        </Viewbox>
-                    </Canvas>
-                    <StackPanel Margin="16, 0, 0, 0" Grid.Column="1" Orientation="Vertical">
-                        <TextBlock Foreground="{StaticResource BasicLabelColor}" FontWeight="Regular" FontSize="14" LineHeight="20" Text="Test name"/>
-                        <TextBlock Foreground="{StaticResource BasicLabelColor}" FontWeight="ExtraLight" FontSize="12" LineHeight="16" Text="Test desc"/>
-                    </StackPanel>
-                    <TextBlock Grid.Column="2" HorizontalAlignment="Right" Width="200"/>
-                </Grid>
-            </StackPanel>
+    <StackPanel Orientation="Vertical">
+        <Border Background="{StaticResource Color23B}" 
+                BorderBrush="{StaticResource Color06B}"
+                BorderThickness="1" CornerRadius="4" Height="40"
+                Margin="0, 0, 0, 16">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top"
+                  Margin="15, 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="32" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Canvas Grid.Column="0" Width="20" Height="20" 
+                        VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <Viewbox Width="20" VerticalAlignment="Center">
+                        <Path VerticalAlignment="Center" 
+                              Fill="{StaticResource BasicLabelColor}" 
+                              Data="F1 M48,48z M0,0z M24,4C12.972,4 4,12.972 4,24 4,35.028 12.972,44 24,44 35.028,44 44,35.028 44,24 44,12.972 35.028,4 24,4z M25.5,33.5C25.5,34.328 24.828,35 24,35 23.172,35 22.5,34.328 22.5,33.5L22.5,22.5C22.5,21.672 23.172,21 24,21 24.828,21 25.5,21.672 25.5,22.5L25.5,33.5z M24,18C22.895,18 22,17.105 22,16 22,14.895 22.895,14 24,14 25.105,14 26,14.895 26,16 26,17.105 25.105,18 24,18z" />
+                    </Viewbox>
+                </Canvas>
+                <TextBlock Grid.Column="1" Foreground="{StaticResource BasicLabelColor}" 
+                           FontWeight="ExtraLight" FontSize="12" LineHeight="16" 
+                           VerticalAlignment="Center"
+                           Text="These settings get applied whne no additional parameters are typed."/>
+            </Grid>
         </Border>
-    </Grid>
+
+ 
+
+        <!-- 
+        
+        <InfoBar Foreground="{StaticResource BasicLabelColor}" FontWeight="Regular" 
+           FontSize="14" LineHeight="20" Margin="0, 0, 0, 16"
+           Text="These settings will apply to sentencess generated when no additional parameteres are typed."/>
+        -->
+        
+        <Border CornerRadius="4" MaxHeight="70" VerticalAlignment="Top" Margin="0, 1.5">
+            <Grid Margin="15, 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="24" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Canvas Grid.Column="0" Width="23" Height="23" 
+                        VerticalAlignment="Center">
+                    <Viewbox Width="20" VerticalAlignment="Center">
+                        <Path VerticalAlignment="Center" 
+                              Fill="{StaticResource BasicLabelColor}" 
+                              Data="F1 M48,48z M0,0z M7.4765625,5.9785156A1.50015,1.50015,0,0,0,6,7.5L6,40.5A1.50015,1.50015,0,1,0,9,40.5L9,25.121094 15.439453,31.560547A1.50015,1.50015,0,1,0,17.560547,29.439453L13.621094,25.5 34.378906,25.5 30.439453,29.439453A1.50015,1.50015,0,1,0,32.560547,31.560547L39,25.121094 39,40.5A1.50015,1.50015,0,1,0,42,40.5L42,7.5A1.50015,1.50015,0,1,0,39,7.5L39,22.878906 32.560547,16.439453A1.50015,1.50015,0,1,0,30.439453,18.560547L34.378906,22.5 13.621094,22.5 17.560547,18.560547A1.50015,1.50015,0,1,0,15.439453,16.439453L9,22.878906 9,7.5A1.50015,1.50015,0,0,0,7.4765625,5.9785156z" />
+                    </Viewbox>
+                </Canvas>
+                <StackPanel Margin="16, 0, 0, 0" Grid.Column="1" Orientation="Vertical">
+                    <TextBlock Foreground="{StaticResource BasicLabelColor}" 
+                               FontWeight="Regular" FontSize="14" LineHeight="20" 
+                               Text="Test name"/>
+                    <TextBlock Foreground="{StaticResource BasicLabelColor}" 
+                               FontWeight="ExtraLight" FontSize="12" LineHeight="16" 
+                               Text="Test desc"/>
+                </StackPanel>
+                <TextBox Grid.Column="2" HorizontalAlignment="Right" Width="200"/>
+            </Grid>
+        </Border>
+    </StackPanel>
 </UserControl>
