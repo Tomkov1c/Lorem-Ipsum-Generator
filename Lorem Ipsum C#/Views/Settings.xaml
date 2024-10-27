@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Flow.Launcher.Plugin.Lorem.Views"
              mc:Ignorable="d">
-    <Grid Margin="30">
-        <StackPanel Orientation="Vertical">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="30">
             <StackPanel Orientation="Horizontal">
                 <Button Style="{StaticResource AccentButtonStyle}" Content="General" Margin="3, 0"/>
                 <Border CornerRadius="100" Margin="15, 0">
@@ -14,15 +14,16 @@
                 </Border>
                 <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch">
                     <StackPanel Orientation="Horizontal">
-                        <Button Content="Senntence" Margin="0, 0, 5, 0"/>
-                        <Button Content="Paragraph" Margin="5, 0"/>
-                        <Button Content="Word" Margin="5, 0"/>
-                        <Button Content="Title" Margin="5, 0"/>
+                        <Button Click="SwitchToType" Content="Sentence" Margin="0, 0, 5, 0"/>
+                        <Button Click="SwitchToType" Content="Paragraph" Margin="5, 0"/>
+                        <Button Click="SwitchToType" Content="Word" Margin="5, 0"/>
+                        <Button Click="SwitchToType" Content="Title" Margin="5, 0"/>
                     </StackPanel>
                 </ScrollViewer>
             </StackPanel>
-            <Frame HorizontalAlignment="Center" x:Name="SettingsFrame"
-                    Content="Tyes/General.xaml" Height="500" Margin="0, 15, 0, 0"/>
+            <Frame HorizontalAlignment="Stretch" x:Name="SettingsFrame"
+                   MaxHeight="350" Margin="0, 15, 0, 0"/>
         </StackPanel>
+        
     </Grid>
 </UserControl>

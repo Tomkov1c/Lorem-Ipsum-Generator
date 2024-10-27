@@ -29,5 +29,16 @@ namespace Flow.Launcher.Plugin.Lorem.Views
 
             SettingsFrame.Navigate(new General());
         }
+
+        void SwitchToType(object sender, RoutedEventArgs e)
+        {
+            Button pressedButton = (Button)sender;
+            string type = pressedButton.Content.ToString();
+
+            if (type == "Sentence")
+            {
+                SettingsFrame.Navigate(new Sentence());
+            }
+        }
     }
 }

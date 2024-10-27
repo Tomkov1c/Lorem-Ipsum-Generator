@@ -24,5 +24,6 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types
         {
             InitializeComponent();
         }
+
     }
 }

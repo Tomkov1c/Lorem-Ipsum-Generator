@@ -6,15 +6,7 @@
              xmlns:local="clr-namespace:Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types"
              mc:Ignorable="d">
     <Grid>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="24" />
-                <ColumnDefinition Width="auto" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="1"
-                       Text="djshfjdhsfs" 
-                       />
-        </Grid>
+
     </Grid>
+    
 </UserControl>
