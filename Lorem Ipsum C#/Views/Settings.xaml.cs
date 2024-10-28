@@ -28,11 +28,21 @@ namespace Flow.Launcher.Plugin.Lorem.Views
         {
             InitializeComponent();
             SettingsFrame.Navigate(new General());
+            GeneralButton.Style = (Style)this.FindResource("AccentButtonStyle");
         }
 
         void SwitchToType(object sender, RoutedEventArgs e)
         {
             Button pressedButton = (Button)sender;
+            foreach (var child in TypeContainer.Children)
+            {
+                if (child is Button button && button != pressedButton)
+                {
+                    button.ClearValue(Button.StyleProperty);
+                }
+            }
+            GeneralButton.ClearValue(Button.StyleProperty);
+            pressedButton.Style = (Style)this.FindResource("AccentButtonStyle");
             string type = pressedButton.Content.ToString();
 
             if (type == "Sentence")
