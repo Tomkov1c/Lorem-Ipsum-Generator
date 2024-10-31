@@ -28,11 +28,11 @@
                 <TextBlock Grid.Column="1" Foreground="{StaticResource BasicLabelColor}" 
                            FontWeight="ExtraLight" FontSize="12" LineHeight="16" 
                            VerticalAlignment="Center"
-                           Text="These settings get applied whne no additional parameters are typed."/>
+                           Text="These settings get applied when no additional parameters are typed."/>
             </Grid>
         </Border>
 
-        
+
         <Border CornerRadius="4" MaxHeight="70" VerticalAlignment="Top" Margin="0, 1.5">
             <Grid Margin="15, 10">
                 <Grid.ColumnDefinitions>
@@ -54,65 +54,9 @@
                                Text="Lenght"/>
                     <TextBlock Foreground="{StaticResource BasicLabelColor}" 
                                FontWeight="ExtraLight" FontSize="12" LineHeight="16" 
-                               Text="Set the lenght of a sentence."/>
+                               Text="The amount of words in a sentence."/>
                 </StackPanel>
-                <TextBox Grid.Column="2" HorizontalAlignment="Right" Width="200"/>
-            </Grid>
-        </Border>
-        <Border CornerRadius="4" MaxHeight="70" VerticalAlignment="Top" Margin="0, 1.5">
-            <Grid Margin="15, 10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="24" />
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Canvas Grid.Column="0" Width="23" Height="23" 
-                VerticalAlignment="Center">
-                    <Viewbox Width="20" VerticalAlignment="Center">
-                        <Path VerticalAlignment="Center" 
-                      Fill="{StaticResource BasicLabelColor}" 
-                      Data="F1 M48,48z M0,0z M23.976562,2.9785156A1.50015,1.50015,0,0,0,22.5,4.5L22.5,8.0585938C21.614196,8.3229331 20.809782,8.7222961 20.253906,9.3476562 19.395664,10.313179 19,11.541667 19,12.75 19,13.695027 19.32381,14.616807 19.839844,15.451172L13.943359,27 11.5,27A1.50015,1.50015,0,1,0,11.5,30L12.412109,30 8.1640625,38.318359A1.50015,1.50015,0,0,0,8,39L8,41.5A1.50015,1.50015,0,1,0,11,41.5L11,39.361328 15.779297,30 22.5,30 22.5,30.5A1.50015,1.50015,0,1,0,25.5,30.5L25.5,30 32.220703,30 37,39.361328 37,41.5A1.50015,1.50015,0,1,0,40,41.5L40,39A1.50015,1.50015,0,0,0,39.835938,38.318359L35.587891,30 36.5,30A1.50015,1.50015,0,1,0,36.5,27L34.056641,27 28.160156,15.451172C28.67619,14.616807 29,13.695027 29,12.75 29,11.541667 28.604336,10.313179 27.746094,9.3476562 27.190218,8.7222961 26.385804,8.3229332 25.5,8.0585938L25.5,4.5A1.50015,1.50015,0,0,0,23.976562,2.9785156z M24,10.75C24.791666,10.75 25.195482,10.992867 25.503906,11.339844 25.81233,11.686821 26,12.208333 26,12.75 26,13.291667 25.81233,13.813179 25.503906,14.160156 25.195482,14.507133 24.791666,14.75 24,14.75 23.208334,14.75 22.804518,14.507133 22.496094,14.160156 22.18767,13.813179 22,13.291667 22,12.75 22,12.208333 22.18767,11.686821 22.496094,11.339844 22.804518,10.992867 23.208334,10.75 24,10.75z M22.222656,17.384766C22.776801,17.58324 23.356462,17.75 24,17.75 24.643538,17.75 25.223199,17.58324 25.777344,17.384766L30.6875,27 25.5,27 25.5,26.5A1.50015,1.50015,0,1,0,22.5,26.5L22.5,27 17.3125,27 22.222656,17.384766z" />
-                    </Viewbox>
-                </Canvas>
-                <StackPanel Margin="16, 0, 0, 0" Grid.Column="1" Orientation="Vertical">
-                    <TextBlock Foreground="{StaticResource BasicLabelColor}" 
-                       FontWeight="Regular" FontSize="14" LineHeight="20" 
-                       Text="Precision"/>
-                    <TextBlock Foreground="{StaticResource BasicLabelColor}" 
-                       FontWeight="ExtraLight" FontSize="12" LineHeight="16" 
-                       Text="Should the lenghth be exact or around that number."/>
-                </StackPanel>
-                <ComboBox HorizontalAlignment="Right" Grid.Column="2" Width="200">
-                    <ComboBoxItem >Exact</ComboBoxItem>
-                    <ComboBoxItem >Around</ComboBoxItem>
-                </ComboBox>
-            </Grid>
-        </Border>
-        <Border CornerRadius="4" MaxHeight="70" VerticalAlignment="Top" Margin="0, 1.5">
-            <Grid Margin="15, 10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="24" />
-                    <ColumnDefinition Width="auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Canvas Grid.Column="0" Width="23" Height="23" 
-                        VerticalAlignment="Center">
-                    <Viewbox Width="20" VerticalAlignment="Center">
-                        <Path VerticalAlignment="Center" 
-                              Fill="{StaticResource BasicLabelColor}" 
-                              Data="F1 M48,48z M0,0z M30.15625,4.0097656C28.745504,4.0097656,27.335246,4.5436602,26.267578,5.6113281L5.6113281,26.267578C3.4759922,28.402914,3.4759922,31.909586,5.6113281,34.044922L13.955078,42.388672C16.090414,44.524008,19.597086,44.524008,21.732422,42.388672L42.390625,21.732422C44.525335,19.597712,44.523813,16.090118,42.388672,13.955078L34.044922,5.6113281C32.977254,4.5436602,31.566996,4.0097656,30.15625,4.0097656z M30.15625,6.9902344C30.793004,6.9902344,31.429496,7.2380898,31.923828,7.7324219L40.267578,16.076172C41.257285,17.065246,41.256469,18.620485,40.267578,19.609375L19.611328,40.267578C18.622664,41.256242,17.064836,41.256242,16.076172,40.267578L7.7324219,31.923828C6.7437578,30.935164,6.7437578,29.377336,7.7324219,28.388672L9.5,26.621094 11.439453,28.560547A1.50015,1.50015,0,1,0,13.560547,26.439453L11.621094,24.5 14.5,21.621094 18.439453,25.560547A1.50015,1.50015,0,1,0,20.560547,23.439453L16.621094,19.5 19.5,16.621094 21.439453,18.560547A1.50015,1.50015,0,1,0,23.560547,16.439453L21.621094,14.5 24.5,11.621094 28.439453,15.560547A1.50015,1.50015,0,1,0,30.560547,13.439453L26.621094,9.5 28.388672,7.7324219C28.883004,7.2380898,29.519496,6.9902344,30.15625,6.9902344z" />
-                    </Viewbox>
-                </Canvas>
-                <StackPanel Margin="16, 0, 0, 0" Grid.Column="1" Orientation="Vertical">
-                    <TextBlock Foreground="{StaticResource BasicLabelColor}" 
-                               FontWeight="Regular" FontSize="14" LineHeight="20" 
-                               Text="Precision"/>
-                    <TextBlock Foreground="{StaticResource BasicLabelColor}" 
-                               FontWeight="ExtraLight" FontSize="12" LineHeight="16" 
-                               Text="Should the lenghth be exact or around that number."/>
-                </StackPanel>
-                <Slider Width="200" Minimum="1" Maximum="10"
-                        SmallChange="1" Value="10" Grid.Column="2" HorizontalAlignment="Right"/>
+                <TextBox x:Name="LenghthTextBox" LostFocus="LenghthFocus" TextChanged="LenghthChanged" Grid.Column="2" HorizontalAlignment="Right" Width="200"/>
             </Grid>
         </Border>
     </StackPanel>

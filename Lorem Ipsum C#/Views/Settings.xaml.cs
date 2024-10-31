@@ -14,7 +14,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Flow.Launcher.Plugin.Lorem;
 using Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types;
-using ModernWpf;
 
 namespace Flow.Launcher.Plugin.Lorem.Views
 {
@@ -23,12 +22,13 @@ namespace Flow.Launcher.Plugin.Lorem.Views
     /// </summary>
     public partial class PluginSettings : UserControl
     {
-
-        public PluginSettings()
+        PluginInitContext context;
+        public PluginSettings(PluginInitContext context)
         {
             InitializeComponent();
             SettingsFrame.Navigate(new General());
-            GeneralButton.Style = (Style)this.FindResource("AccentButtonStyle");
+            this.context = context;
+            // GeneralButton.Style = (Style)this.FindResource("AccentButtonStyle");
         }
 
         void SwitchToType(object sender, RoutedEventArgs e)
@@ -41,13 +41,19 @@ namespace Flow.Launcher.Plugin.Lorem.Views
                     button.ClearValue(Button.StyleProperty);
                 }
             }
-            GeneralButton.ClearValue(Button.StyleProperty);
+            // GeneralButton.ClearValue(Button.StyleProperty);
             pressedButton.Style = (Style)this.FindResource("AccentButtonStyle");
             string type = pressedButton.Content.ToString();
 
             if (type == "Sentence")
             {
-                SettingsFrame.Navigate(new Sentence());
+                SettingsFrame.Navigate(new Sentence(this.context));
+            }else if (type == "Paragraph")
+            {
+                SettingsFrame.Navigate(new LoremIpsumGenerator.Views.Types.Paragraph(this.context));
+            }else if (type == "Title")
+            {
+                SettingsFrame.Navigate(new Title(this.context));
             }
         }
     }

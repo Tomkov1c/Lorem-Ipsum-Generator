@@ -9,15 +9,14 @@
     <Grid>
         <StackPanel Orientation="Vertical" Margin="30">
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="GeneralButton" Click="SwitchToType" Content="General" Margin="3, 0"/>
+                <!--<Button x:Name="GeneralButton" Click="SwitchToType" Content="General" Margin="3, 0"/>
                 <Border CornerRadius="100" Margin="15, 0">
                     <Rectangle Fill="DimGray" Opacity="0.3" HorizontalAlignment="Stretch" Width="1"/>
-                </Border>
+                </Border> -->
                 <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch">
                     <StackPanel Orientation="Horizontal" x:Name="TypeContainer">
                         <Button Click="SwitchToType" Content="Sentence" Margin="0, 0, 5, 0"/>
                         <Button Click="SwitchToType" Content="Paragraph" Margin="5, 0"/>
-                        <Button Click="SwitchToType" Content="Word" Margin="5, 0"/>
                         <Button Click="SwitchToType" Content="Title" Margin="5, 0"/>
                     </StackPanel>
                 </ScrollViewer>

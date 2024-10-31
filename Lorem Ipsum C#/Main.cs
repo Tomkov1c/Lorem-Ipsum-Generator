@@ -9,6 +9,10 @@ using Flow.Launcher.Plugin.Lorem.Views;
 using Flow.Launcher.Plugin;
 using System.Configuration;
 using Humanizer.Configuration;
+using Newtonsoft.Json;
+using System.IO;
+using Flow.Launcher.Plugin.SharedCommands;
+using Flow.Launcher.Plugin.LoremIpsumGenerator.Classes;
 
 namespace Flow.Launcher.Plugin.Lorem
 {
@@ -103,28 +107,58 @@ namespace Flow.Launcher.Plugin.Lorem
         public void Init(PluginInitContext context)
         {
             this.context = context;
+            var full_path = Path.Combine(context.CurrentPluginMetadata.PluginDirectory, "lorem-settings.json");
 
-            settings = context.API.LoadSettingJsonStorage<Settings>();
+            if (!full_path.FileExists())
+            {
+                using (File.Create(full_path)) { }
+
+                Settings defaultSettings = new Settings();
+                defaultSettings.Sentence.Length = defaultSettings.Sentence.defaultLenghth();
+                defaultSettings.Paragraph.Length = defaultSettings.Paragraph.defaultLenghth();
+                defaultSettings.Word.Length = defaultSettings.Word.defaultLenghth();
+                defaultSettings.Title.Length = defaultSettings.Title.defaultLenghth();
+
+
+                string json = JsonConvert.SerializeObject(defaultSettings, Formatting.Indented);
+                File.WriteAllText(full_path, json);
+            }
+            else
+            {
+                this.settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText(full_path));
+            }
+
         }
 
         public List<Result> Query(Query query)
         {
             List<Result> results = new List<Result>();
+            results.Clear();
 
+			string afterKeyword = query.Search.ToLower();
+			string num = "";
 
-			string _new = query.Search.ToLower();
-			string newNew = "";
-
-
-            foreach (char c in _new)
+            foreach (char c in afterKeyword)
             {
                 if (char.IsDigit(c) || char.IsUpper(c))
                 {
-                    newNew += c;
+                    num += c;
                 }
             }
+            QueryText queryText = new QueryText();
 
+            if (afterKeyword != "")
+            {
 
+            }else
+            {
+                results.Add(new Result { Title = queryText.Sentence.Title, SubTitle = queryText.Sentence.Subtitle, IcoPath = queryText.Sentence.Icon, Action = clipboardSentence });
+                results.Add(new Result { Title = queryText.Paragraph.Title, SubTitle = queryText.Paragraph.Subtitle, IcoPath = queryText.Paragraph.Icon, Action = clipboardParagraph });
+                results.Add(new Result { Title = queryText.Word.Title, SubTitle = queryText.Word.Subtitle, IcoPath = queryText.Word.Icon, Action = clipboardWord });
+                results.Add(new Result { Title = queryText.Title.Title, SubTitle = queryText.Title.Subtitle, IcoPath = queryText.Title.Icon, Action = clipboardTitle });
+            }
+
+            /*
             if (_new != "")
             {
                 if (_new[0] == 'p')
@@ -297,6 +331,7 @@ namespace Flow.Launcher.Plugin.Lorem
                     Score = 5000
                 });
             }
+            */
             return results;
         }
         public bool clipboardSentence(ActionContext context)
@@ -445,7 +480,7 @@ namespace Flow.Launcher.Plugin.Lorem
 
         public Control CreateSettingPanel()
         {
-            return new PluginSettings();
+            return new PluginSettings(context);
         }
     }
 }

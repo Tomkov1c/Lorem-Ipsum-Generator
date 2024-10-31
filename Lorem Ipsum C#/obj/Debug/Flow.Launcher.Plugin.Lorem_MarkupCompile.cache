@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 
-3-647115962
+5-1628101329
 5835094639
-6920103719
-2151524444989
-Views\Settings.xaml;Views\Types\General.xaml;Views\Types\Sentence.xaml;
+91259008174
+2161514067655
+Views\Settings.xaml;Views\Types\General.xaml;Views\Types\Paragraph.xaml;Views\Types\Sentence.xaml;Views\Types\Title.xaml;
 
 False
 

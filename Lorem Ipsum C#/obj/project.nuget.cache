@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wzYa1G7UPlqVTL1rEKBGIdmpX1RBWB39V405hn9q664hR9blZvti5XDuNsWObzt15AdH/uIccxZ3/Mzu8a0NDg==",
+  "dgSpecHash": "Z9/hVi2WNds=",
   "success": true,
   "projectFilePath": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Lorem Ipsum C#.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\gamin\\.nuget\\packages\\jetbrains.annotations\\2024.2.0\\jetbrains.annotations.2024.2.0.nupkg.sha512",
     "C:\\Users\\gamin\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\gamin\\.nuget\\packages\\modernwpfui\\0.9.6\\modernwpfui.0.9.6.nupkg.sha512",
+    "C:\\Users\\gamin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\gamin\\.nuget\\packages\\odotocodot.onenote.linq\\1.1.0\\odotocodot.onenote.linq.1.1.0.nupkg.sha512",
     "C:\\Users\\gamin\\.nuget\\packages\\propertychanged.fody\\3.4.0\\propertychanged.fody.3.4.0.nupkg.sha512",
     "C:\\Users\\gamin\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",

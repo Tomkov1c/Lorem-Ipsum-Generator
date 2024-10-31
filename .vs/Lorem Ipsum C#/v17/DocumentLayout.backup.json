@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\classes\\querytext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\classes\\querytext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\classes\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\classes\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\views\\types\\title.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\views\\types\\title.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\views\\types\\title.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\views\\types\\title.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\views\\types\\paragraph.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\views\\types\\paragraph.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\views\\types\\paragraph.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\views\\types\\paragraph.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\views\\types\\sentence.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\views\\types\\sentence.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\views\\types\\sentence.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\views\\types\\sentence.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|c:\\users\\gamin\\appdata\\roaming\\flowlauncher\\plugins\\dev lorem\\lorem ipsum c#\\plugin.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F77CF7B1-43B5-4562-910D-EEA7B6D7A8E2}|Lorem Ipsum C#\\Lorem Ipsum C#.csproj|solutionrelative:lorem ipsum c#\\plugin.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "plugin.json",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\plugin.json",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\plugin.json",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\plugin.json",
+              "RelativeToolTip": "Lorem Ipsum C#\\plugin.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-04T20:56:07.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Main.cs",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Main.cs",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Main.cs",
+              "RelativeToolTip": "Lorem Ipsum C#\\Main.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJ0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:56:07.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Classes\\Settings.cs",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Classes\\Settings.cs",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Classes\\Settings.cs",
+              "RelativeToolTip": "Lorem Ipsum C#\\Classes\\Settings.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:42:21.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QueryText.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Classes\\QueryText.cs",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Classes\\QueryText.cs",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Classes\\QueryText.cs",
+              "RelativeToolTip": "Lorem Ipsum C#\\Classes\\QueryText.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:42:08.22Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Title.xaml",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Title.xaml",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Views\\Types\\Title.xaml",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Title.xaml",
+              "RelativeToolTip": "Lorem Ipsum C#\\Views\\Types\\Title.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-31T18:17:12.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Title.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Title.xaml.cs",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Views\\Types\\Title.xaml.cs",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Title.xaml.cs",
+              "RelativeToolTip": "Lorem Ipsum C#\\Views\\Types\\Title.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T18:17:32.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Paragraph.xaml",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Paragraph.xaml",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Views\\Types\\Paragraph.xaml",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Paragraph.xaml",
+              "RelativeToolTip": "Lorem Ipsum C#\\Views\\Types\\Paragraph.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-30T09:10:34.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Paragraph.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Paragraph.xaml.cs",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Views\\Types\\Paragraph.xaml.cs",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Paragraph.xaml.cs",
+              "RelativeToolTip": "Lorem Ipsum C#\\Views\\Types\\Paragraph.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwBkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:43:33.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sentence.xaml",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Sentence.xaml",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Views\\Types\\Sentence.xaml",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Sentence.xaml",
+              "RelativeToolTip": "Lorem Ipsum C#\\Views\\Types\\Sentence.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-27T13:18:44.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Sentence.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Sentence.xaml.cs",
+              "RelativeDocumentMoniker": "Lorem Ipsum C#\\Views\\Types\\Sentence.xaml.cs",
+              "ToolTip": "C:\\Users\\gamin\\AppData\\Roaming\\FlowLauncher\\Plugins\\Dev Lorem\\Lorem Ipsum C#\\Views\\Types\\Sentence.xaml.cs",
+              "RelativeToolTip": "Lorem Ipsum C#\\Views\\Types\\Sentence.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T13:18:46.675Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
