@@ -4,114 +4,38 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows;
-using Flow.Launcher.Plugin.Lorem.Classes;
-using Flow.Launcher.Plugin.Lorem.Views;
+using Flow.Launcher.Plugin.LoremIpsumGenerator.Classes;
+using Flow.Launcher.Plugin.LoremIpsumGenerator.Views;
 using Flow.Launcher.Plugin;
 using System.Configuration;
 using Humanizer.Configuration;
 using Newtonsoft.Json;
 using System.IO;
 using Flow.Launcher.Plugin.SharedCommands;
-using Flow.Launcher.Plugin.LoremIpsumGenerator.Classes;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
-namespace Flow.Launcher.Plugin.Lorem
+namespace Flow.Launcher.Plugin.LoremIpsumGenerator
 {
     public class MyFlowPlugin : IPlugin, ISettingProvider
     {
-
-        int amount = 1;
+        string settingFullPath;
+        string num;
+        int amount;
 
         public Func<ActionContext, bool> Action { get; set; }
-
-        string[] loremIpsumWords = new string[]
-        {
-            "laborum",
-            "eveniet",
-            "sunt",
-            "iure",
-            "nobis",
-            "odio",
-            "quasi",
-            "aut",
-            "vel",
-            "odit",
-            "tempore",
-            "facilis",
-            "neque",
-            "nihil",
-            "vitae",
-            "vero",
-            "ipsum",
-            "nisi",
-            "animi",
-            "cumque",
-            "velit",
-            "modi",
-            "natus",
-            "iusto",
-            "illo",
-            "sed",
-            "tempora",
-            "ratione",
-            "rem",
-            "sint",
-            "unde",
-            "qui",
-            "amet",
-            "quo",
-            "culpa",
-            "libero",
-            "ipsa",
-            "dicta",
-            "nesciunt",
-            "autem",
-            "minima",
-            "ipsam",
-            "ullam",
-            "totam",
-            "quis",
-            "dolores",
-            "harum",
-            "quia",
-            "ea",
-            "quas",
-            "quam",
-            "quae",
-            "hic",
-            "ut",
-            "ad",
-            "at",
-            "in",
-            "id",
-            "quos",
-            "sit",
-            "eos",
-            "alias",
-            "dolore",
-            "lorem",
-            "ipsum",
-            "dolor",
-            "sit",
-            "amet",
-            "elit",
-            "sed",
-            "ut",
-            "et"
-        };
-
-
         private PluginInitContext context;
-
         private Settings settings;
+
+        string[] loremIpsumWords = LoremWords.Words;
 
         public void Init(PluginInitContext context)
         {
             this.context = context;
-            var full_path = Path.Combine(context.CurrentPluginMetadata.PluginDirectory, "lorem-settings.json");
+            settingFullPath = Path.Combine(context.CurrentPluginMetadata.PluginDirectory, "lorem-settings.json");
 
-            if (!full_path.FileExists())
+            if (!settingFullPath.FileExists())
             {
-                using (File.Create(full_path)) { }
+                using (File.Create(settingFullPath)) { }
 
                 Settings defaultSettings = new Settings();
                 defaultSettings.Sentence.Length = defaultSettings.Sentence.defaultLenghth();
@@ -121,11 +45,11 @@ namespace Flow.Launcher.Plugin.Lorem
 
 
                 string json = JsonConvert.SerializeObject(defaultSettings, Formatting.Indented);
-                File.WriteAllText(full_path, json);
+                File.WriteAllText(settingFullPath, json);
             }
             else
             {
-                this.settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText(full_path));
+                this.settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText(settingFullPath));
             }
 
         }
@@ -133,10 +57,11 @@ namespace Flow.Launcher.Plugin.Lorem
         public List<Result> Query(Query query)
         {
             List<Result> results = new List<Result>();
+            this.settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText(settingFullPath));
             results.Clear();
+            num = "";
 
 			string afterKeyword = query.Search.ToLower();
-			string num = "";
 
             foreach (char c in afterKeyword)
             {
@@ -147,8 +72,50 @@ namespace Flow.Launcher.Plugin.Lorem
             }
             QueryText queryText = new QueryText();
 
-            if (afterKeyword != "")
+            if (afterKeyword != "" && afterKeyword != " ")
             {
+                if (afterKeyword[0] == 'p')
+                {
+                    results.Add(new Result
+                    {
+                        Title = num == "" ? queryText.Paragraph.Title : queryText.Paragraph.Custom.Title.combine(num),
+                        SubTitle = num == "" ? queryText.Paragraph.Subtitle : queryText.Paragraph.Custom.Subtitle.combine(num),
+                        IcoPath = queryText.Paragraph.Icon,
+                        Action = clipboardParagraph
+                    });
+                }
+                else if (afterKeyword[0] == 's')
+                {
+                    results.Add(new Result
+                    {
+                        Title = num == "" ? queryText.Sentence.Title : queryText.Sentence.Custom.Title.combine(num),
+                        SubTitle = num == "" ? queryText.Sentence.Subtitle : queryText.Sentence.Custom.Subtitle.combine(num),
+                        IcoPath = queryText.Sentence.Icon, Action = clipboardSentence
+                    });
+
+                }
+                else if(afterKeyword[0] == 'w')
+                {
+                    results.Add(new Result
+                    {
+                        Title = num == "" ? queryText.Word.Title : queryText.Word.Custom.Title.combine(num),
+                        SubTitle = num == "" ? queryText.Word.Subtitle : queryText.Word.Custom.Subtitle.combine(num),
+                        IcoPath = queryText.Word.Icon, Action = clipboardWord
+                    });
+                }
+                else if(afterKeyword[0] == 't') 
+                {
+                    results.Add(new Result
+                    {
+                        Title = num == "" ? queryText.Title.Title : queryText.Title.Custom.Title.combine(num),
+                        SubTitle = num == "" ? queryText.Title.Subtitle : queryText.Title.Custom.Subtitle.combine(num),
+                        IcoPath = queryText.Title.Icon, Action = clipboardTitle
+                    });
+                }
+                else
+                {
+                    results.Add(new Result { Title = queryText.Error.Title, SubTitle = queryText.Error.Subtitle, IcoPath = queryText.Error.Icon});
+                }
 
             }else
             {
@@ -158,224 +125,50 @@ namespace Flow.Launcher.Plugin.Lorem
                 results.Add(new Result { Title = queryText.Title.Title, SubTitle = queryText.Title.Subtitle, IcoPath = queryText.Title.Icon, Action = clipboardTitle });
             }
 
-            /*
-            if (_new != "")
-            {
-                if (_new[0] == 'p')
-                {
-                    if (newNew != "")
-                    {
-                        results.Clear();
-                        amount = Convert.ToInt32(newNew);
-
-                        results.Add(new Result
-                        {
-                            Title = "Paragraphs: " + newNew,
-                            SubTitle = "Generate a paragraph with " + newNew + " sentences.",
-                            IcoPath = "images/app.png",
-                            Action = clipboardParagraph,
-                            Score = 5000
-                        });
-                    }
-                    else
-                    {
-                        results.Clear();
-
-                        results.Add(new Result
-                        {
-                            Title = "Paragraph",
-                            SubTitle = "Generates a paragraph. Add a number to specify the amount of sentences in the paragraph.",
-                            IcoPath = "images/app.png",
-                            Action = clipboardParagraph,
-                            Score = 5000
-                        });
-                    }
-                }
-                else if (_new[0] == 's')
-                {
-                    results.Clear();
-
-                    if (newNew != "")
-                    {
-                        results.Clear();
-                        amount = Convert.ToInt32(newNew);
-
-                        results.Add(new Result
-                        {
-                            Title = "Sentences with: " + newNew + " words.",
-                            SubTitle = "Generate a paragraph with " + newNew + " sentences.",
-                            IcoPath = "images/app.png",
-                            Action = clipboardSentence,
-                            Score = 5000
-                        });
-                    }
-                    else
-                    {
-                        results.Clear();
-
-                        results.Add(new Result
-                        {
-                            Title = "Sentence",
-                            SubTitle = "Generates a sentence. Add a number to specify the amount of words in the sentence.",
-                            IcoPath = "images/app.png",
-                            Action = clipboardSentence,
-                            Score = 5000
-                        });
-                    }
-                }
-                else if (_new[0] == 'w')
-                {
-                    if (newNew != "")
-                    {
-                        results.Clear();
-                        amount = Convert.ToInt32(newNew);
-
-                        results.Add(new Result
-                        {
-                            Title = "Words: " + newNew,
-                            SubTitle = "Generate a string of " + newNew + " words.",
-                            IcoPath = "images/app.png",
-                            Action = clipboardWord,
-                            Score = 5000
-                        });
-                    }
-                    else
-                    {
-                        results.Clear();
-
-                        results.Add(new Result
-                        {
-                            Title = "Word",
-                            SubTitle = "Generates a word. Add a number to specify the amount of words.",
-                            IcoPath = "images/app.png",
-                            Action = clipboardWord,
-                            Score = 5000
-                        });
-                    }
-                }
-                else if (_new[0] == 't')
-                {
-                    if (newNew != "")
-                    {
-                        results.Clear();
-                        amount = Convert.ToInt32(newNew);
-
-                        results.Add(new Result
-                        {
-                            Title = "Title with: " + newNew + " words.",
-                            SubTitle = "Generate a title with: " + newNew + "words.",
-                            IcoPath = "images/app.png",
-                            Action = clipboardTitle,
-                            Score = 5000
-                        });
-                    }
-                    else
-                    {
-                        results.Clear();
-
-                        results.Add(new Result
-                        {
-                            Title = "Title",
-                            SubTitle = "Generates a title (Like a newspaper headline). Add a number to specify the amount of words in the the title.",
-                            IcoPath = "images/app.png",
-                            Action = clipboardTitle,
-                            Score = 5000
-                        });
-                    }
-                }
-                else
-                {
-                     results.Add(new Result
-                    {
-                        Title = "Incorrect query",
-                        SubTitle = "Please follow the suggestions.",
-                        IcoPath = "images/x.png",
-                        Score = 5000
-                    });
-                }
-            }
-            else
-            {
-                results.Clear();
-
-                results.Add(new Result
-                {
-                    Title = "Sentence",
-                    SubTitle = "Generates a sentence. Add a number to specify the amount of words in the sentence.",
-                    IcoPath = "images/app.png",
-                    Action = clipboardSentence,
-                    Score = 5000
-                });
-                results.Add(new Result
-                {
-                    Title = "Paragraph",
-                    SubTitle = "Generates a paragraph. Add a number to specify the amount of sentences in the paragraph.",
-                    IcoPath = "images/app.png",
-                    Action = clipboardParagraph,
-                    Score = 5000
-                });
-                results.Add(new Result
-                {
-                    Title = "Word",
-                    SubTitle = "Generates a word. Add a number to specify the amount of words.",
-                    IcoPath = "images/app.png",
-                    Action = clipboardWord,
-                    Score = 5000
-                });
-                results.Add(new Result
-                {
-                    Title = "Title",
-                    SubTitle = "Generates a title (Like a newspaper headline). Add a number to specify the amount of words in the the title.",
-                    IcoPath = "images/app.png",
-                    Action = clipboardTitle,
-                    Score = 5000
-                });
-            }
-            */
+            amount = (!string.IsNullOrWhiteSpace(num)) ? Convert.ToInt32(num) : 0;
             return results;
         }
         public bool clipboardSentence(ActionContext context)
         {
             string output = genSentence(amount);
             Clipboard.SetText(output);
-            amount = 1;
             return true;
         }
         public bool clipboardParagraph(ActionContext context)
         {
             string output = "";
-            if (amount == 1)
-            {
-                Random rng = new Random();
-                amount = rng.Next(3, 10);
-            }
+            amount = amount == 0 ? this.settings.Paragraph.Length : amount;
             for (int i = 0; i < amount; i++)
             {
-                output += genSentence(0) + " ";
+                output += genSentence(this.settings.Sentence.Length) + " ";
             }
-            output += "\n";
+            // Settings Idea: output += "\n";
+            //                seperate sentence settings
             Clipboard.SetText(output);
-            amount = 1;
             return true;
         }
         public bool clipboardWord(ActionContext context)
         {
+
             string output = "";
+            amount = amount == 0 ? 1 : amount;
             for (int i = 0; i < amount; i++)
             {
-                output += genWord() + " ";
+                output += genWord() + (i != amount - 1 ? " " : null );
             }
+            
             Clipboard.SetText(output);
-            amount = 1;
             return true;
         }
         public bool clipboardTitle(ActionContext context)
         {
             string output = genTitle(amount);
             Clipboard.SetText(output);
-            amount = 1;
             return true;
         }
+
+
+
 
         public string genSentence(int length)
         {
@@ -384,12 +177,10 @@ namespace Flow.Launcher.Plugin.Lorem
             output = genWord();
             string privWord = " ";
             Random rng = new Random();
-            if (length <= 1) 
-            { 
-                length = rng.Next(9, 18); 
-            }
 
-            for (int i = 0; i < (length - 1); i++)
+            length = (length == 0) ? this.settings.Sentence.Length : length;
+
+            for (int i = 0; i < length; i++)
             {
                 int needsComma = rng.Next(10);
                 temp = genWord();
@@ -398,47 +189,32 @@ namespace Flow.Launcher.Plugin.Lorem
                 {
                     i--;
                     continue;
-                }else
-                {
-                    output += temp;
-                    privWord = temp;
                 }
 
+                output += temp;
+                privWord = temp;
 
-                if (i != (length - 2))
+                if (i != (length - 1))
                 {
-                    if (needsComma == 7)
-                    {
-                        output += ",";
-                    }
-                    output += " ";
+                    output += (needsComma >= 7) ? ", " : " ";
                 }
-                
+
             }
-            int whichEndMark = rng.Next(7);
-            if (whichEndMark == 5)
-            {
-                output += "!";
-            }
-            else if (whichEndMark == 7)
-            {
-                output += "?";
-            }
-            else
-            {
-                output += ".";
-            }
+
+            int whichEndMark = rng.Next(1, 11);
+            if (whichEndMark <= 7) { output += "."; }
+            else if (whichEndMark <= 9) { output += "!"; }
+            else { output += "?"; }
+
             output = char.ToUpper(output[0]) + output.Substring(1);
             return output;
         }
         public string genWord()
         {
-            string output = "";
             Random rng = new Random();
             int rand = rng.Next(loremIpsumWords.Length);
-            output = loremIpsumWords[rand];
 
-            return output;
+            return loremIpsumWords[rand];
         }
         public string genTitle(int length)
         {
@@ -447,13 +223,12 @@ namespace Flow.Launcher.Plugin.Lorem
             output = genWord();
             string privWord = " ";
             Random rng = new Random();
-            if (length <= 1)
-            {
-                length = rng.Next(9, 18);
-            }
 
-            for (int i = 0; i < (length - 1); i++)
+            length = (length == 0) ? this.settings.Title.Length : length;
+
+            for (int i = 0; i < length; i++)
             {
+                int needsComma = rng.Next(10);
                 temp = genWord();
 
                 if ((temp == privWord) || (temp.Length == privWord.Length) || (temp[0] == privWord[0]))
@@ -461,19 +236,17 @@ namespace Flow.Launcher.Plugin.Lorem
                     i--;
                     continue;
                 }
-                else
-                {
-                    output += temp;
-                    privWord = temp;
-                }
 
+                output += temp;
+                privWord = temp;
 
-                if (i != (length - 2))
+                if (i != (length - 1))
                 {
                     output += " ";
                 }
 
             }
+
             output = char.ToUpper(output[0]) + output.Substring(1);
             return output;
         }

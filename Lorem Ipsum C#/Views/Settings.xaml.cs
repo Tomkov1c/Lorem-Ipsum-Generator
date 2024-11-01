@@ -12,10 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Flow.Launcher.Plugin.Lorem;
+using Flow.Launcher.Plugin.LoremIpsumGenerator;
 using Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types;
 
-namespace Flow.Launcher.Plugin.Lorem.Views
+namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Views
 {
     /// <summary>
     /// Interaction logic for Settings.xaml

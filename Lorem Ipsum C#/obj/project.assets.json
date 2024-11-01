@@ -37,15 +37,6 @@
           }
         }
       },
-      "Interop.Microsoft.Office.Interop.OneNote/1.1.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Interop.Microsoft.Office.Interop.OneNote.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Interop.Microsoft.Office.Interop.OneNote.dll": {}
-        }
-      },
       "JetBrains.Annotations/2024.2.0": {
         "type": "package",
         "compile": {
@@ -496,24 +487,6 @@
           }
         }
       },
-      "Odotocodot.OneNote.Linq/1.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Interop.Microsoft.Office.Interop.OneNote": "1.1.0.2",
-          "System.Collections.Immutable": "8.0.0",
-          "System.Drawing.Common": "8.0.6"
-        },
-        "compile": {
-          "lib/netstandard2.0/Odotocodot.OneNote.Linq.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Odotocodot.OneNote.Linq.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "PropertyChanged.Fody/3.4.0": {
         "type": "package",
         "dependencies": {
@@ -531,22 +504,6 @@
         },
         "build": {
           "build/_._": {}
-        }
-      },
-      "System.Collections.Immutable/8.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net7.0/System.Collections.Immutable.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/System.Collections.Immutable.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Drawing.Common/8.0.10": {
@@ -633,19 +590,6 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
-      ]
-    },
-    "Interop.Microsoft.Office.Interop.OneNote/1.1.0.2": {
-      "sha512": "ut8pftjybCXTuwIAflYH1tm8yoH7mouIHvuFLqp6gLilIWN6KX534XuU9kNNtDD8trLmEBkKw5wIYqdY7tdxNA==",
-      "type": "package",
-      "path": "interop.microsoft.office.interop.onenote/1.1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "interop.microsoft.office.interop.onenote.1.1.0.2.nupkg.sha512",
-        "interop.microsoft.office.interop.onenote.nuspec",
-        "lib/net40/Interop.Microsoft.Office.Interop.OneNote.dll",
-        "lib/netstandard2.0/Interop.Microsoft.Office.Interop.OneNote.dll"
       ]
     },
     "JetBrains.Annotations/2024.2.0": {
@@ -1276,23 +1220,6 @@
         "packageIcon.png"
       ]
     },
-    "Odotocodot.OneNote.Linq/1.1.0": {
-      "sha512": "Z3UF/1hL8uG1a2uPO8jlwdZ9p0yjtMScF9lrP9KUHZ3tHWOU6iXbULSJ64COGsawmOZTQfjPXYpa6VO9Z4sipQ==",
-      "type": "package",
-      "path": "odotocodot.onenote.linq/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "LICENSE.txt",
-        "NuGet.md",
-        "lib/netstandard2.0/Odotocodot.OneNote.Linq.dll",
-        "lib/netstandard2.0/Odotocodot.OneNote.Linq.xml",
-        "logo.png",
-        "odotocodot.onenote.linq.1.1.0.nupkg.sha512",
-        "odotocodot.onenote.linq.nuspec"
-      ]
-    },
     "PropertyChanged.Fody/3.4.0": {
       "sha512": "IAZyq0uolKo2WYm4mjx+q7A8fSGFT0x2e1s3y+ODn4JI0kqTDoo9GF2tdaypUzRFJZfdMxfC5HZW9QzdJLtOnA==",
       "type": "package",
@@ -1313,36 +1240,6 @@
         "propertychanged.fody.nuspec",
         "weaver/PropertyChanged.Fody.dll",
         "weaver/PropertyChanged.Fody.xcf"
-      ]
-    },
-    "System.Collections.Immutable/8.0.0": {
-      "sha512": "AurL6Y5BA1WotzlEvVaIDpqzpIPvYnnldxru8oXJU2yFxFUy3+pNXjXd1ymO+RA0rq0+590Q8gaz2l3Sr7fmqg==",
-      "type": "package",
-      "path": "system.collections.immutable/8.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Collections.Immutable.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
-        "lib/net462/System.Collections.Immutable.dll",
-        "lib/net462/System.Collections.Immutable.xml",
-        "lib/net6.0/System.Collections.Immutable.dll",
-        "lib/net6.0/System.Collections.Immutable.xml",
-        "lib/net7.0/System.Collections.Immutable.dll",
-        "lib/net7.0/System.Collections.Immutable.xml",
-        "lib/net8.0/System.Collections.Immutable.dll",
-        "lib/net8.0/System.Collections.Immutable.xml",
-        "lib/netstandard2.0/System.Collections.Immutable.dll",
-        "lib/netstandard2.0/System.Collections.Immutable.xml",
-        "system.collections.immutable.8.0.0.nupkg.sha512",
-        "system.collections.immutable.nuspec",
-        "useSharedDesignerContext.txt"
       ]
     },
     "System.Drawing.Common/8.0.10": {
@@ -1392,7 +1289,6 @@
       "Humanizer.Core >= 2.14.1",
       "ModernWpfUI >= 0.9.6",
       "Newtonsoft.Json >= 13.0.3",
-      "Odotocodot.OneNote.Linq >= 1.1.0",
       "System.Drawing.Common >= 8.0.10"
     ]
   },
@@ -1461,10 +1357,6 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
-          },
-          "Odotocodot.OneNote.Linq": {
-            "target": "Package",
-            "version": "[1.1.0, )"
           },
           "System.Drawing.Common": {
             "target": "Package",

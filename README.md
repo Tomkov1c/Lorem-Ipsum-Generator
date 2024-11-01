@@ -16,13 +16,18 @@ When I design I usually use Lorem Ipsum because I'm too lazy to write something 
 * Generate Words (custom amount of them in a string)
 * Generate a Paragraph (custom amount of sentences in it)
 * Generate a Sentence (custom amount of words in it)
+* Generate a Title (custom amount of words in it)
 
 <br>
 
 ## 📅 Planed Features
-*I need to learn how to implement them first :)*
-* Setting default range / amount ...
-* More types that can be generated
+~~*I need to learn how to implement them first :)*~~
+
+- [x] Setting default range / amount ...
+- [] Subtype settings
+- [] Legth range and precision
+- [] Type specific settings
+- [] More types that can be generated
 
 <br>
 

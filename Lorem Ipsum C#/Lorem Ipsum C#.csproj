@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0-windows</TargetFramework>
-    <AssemblyName>Flow.Launcher.Plugin.Lorem</AssemblyName>
+    <AssemblyName>Flow.Launcher.Plugin.LoremIpsumGenerator</AssemblyName>
     <PackageId>Flow.Launcher.Plugin.Lorem</PackageId>
     <Authors>Odotocodot</Authors>
     <PackageProjectUrl>https://github.com/Odotocodot/Flow.Launcher.Plugin.LoremIpsumGenerator</PackageProjectUrl>
@@ -31,7 +31,6 @@
     <PackageReference Include="Humanizer.Core" Version="2.14.1" />
     <PackageReference Include="ModernWpfUI" Version="0.9.6" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Odotocodot.OneNote.Linq" Version="1.1.0" />
     <PackageReference Include="System.Drawing.Common" Version="8.0.10" />
   </ItemGroup>
 

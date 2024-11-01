@@ -1,5 +1,4 @@
-﻿using Flow.Launcher.Plugin.Lorem.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +12,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Classes
         public Type Paragraph { get; set; }
         public Type Word { get; set; }
         public Type Title { get; set; }
+        public Type Error { get; set; }
         public QueryText()
         {
             Sentence = new Type
@@ -22,12 +22,12 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Classes
                 Icon = "Images/Icon8/Windows/icons8-comma-512.png",
                 Custom = new Custom
                 {
-                    Title = new Title
+                    Title = new CTitle
                     {
                         Part1 = "Sentence with",
                         Part2 = "words",
                     },
-                    Subtitle = new Subtitle
+                    Subtitle = new CSubtitle
                     {
                         Part1 = "Generate a sentence with",
                         Part2 = "words.",
@@ -40,12 +40,12 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Classes
                 Icon = "Images/Icon8/Windows/icons8-paragraph-512.png",
                 Custom = new Custom
                 {
-                    Title = new Title
+                    Title = new CTitle
                     {
                         Part1 = "Paragraph with",
                         Part2 = "sentences",
                     },
-                    Subtitle = new Subtitle
+                    Subtitle = new CSubtitle
                     {
                         Part1 = "Generate a paragraph with",
                         Part2 = "sentences.",
@@ -58,12 +58,12 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Classes
                 Icon = "Images/Icon8/Windows/icons8-font-512.png",
                 Custom = new Custom
                 {
-                    Title = new Title
+                    Title = new CTitle
                     {
                         Part1 = "A string of",
                         Part2 = "words",
                     },
-                    Subtitle = new Subtitle
+                    Subtitle = new CSubtitle
                     {
                         Part1 = "Generate a string of",
                         Part2 = "words.",
@@ -76,39 +76,46 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Classes
                 Icon = "Images/Icon8/Windows/icons8-type-512.png",
                 Custom = new Custom
                 {
-                    Title = new Title
+                    Title = new CTitle
                     {
                         Part1 = "Title with",
                         Part2 = "words",
                     },
-                    Subtitle = new Subtitle
+                    Subtitle = new CSubtitle
                     {
                         Part1 = "Generate a title with",
                         Part2 = "words.",
                     }
                 }
             };
+            Error = new Type
+            {
+                Title = "Incorrect quary",
+                Subtitle = "Please follow the suggestions.",
+                Icon = "Images/Icon8/Windows/icons8-error-512.png",
+                Custom = null,
+            };
         }
     }
 
-    public class Title 
+    public class CTitle 
     {
         public string Part1 { get; set; }
         public string Part2 { get; set; }
 
-        public string combine(int amount)
+        public string combine(string amount)
         {
             string final = this.Part1 + " " + amount + " " + this.Part2;
             return final;
         }
     }
 
-    public class Subtitle
+    public class CSubtitle
     {
         public string Part1 { get; set; }
         public string Part2 { get; set; }
 
-        public string combine(int amount)
+        public string combine(string amount)
         {
             string final = this.Part1 + " " + amount + " " + this.Part2;
             return final;
@@ -117,8 +124,8 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Classes
 
     public class Custom
     {
-        public Title Title { get; set; }
-        public Subtitle Subtitle { get; set; }
+        public CTitle Title { get; set; }
+        public CSubtitle Subtitle { get; set; }
 
     }
     public class Type

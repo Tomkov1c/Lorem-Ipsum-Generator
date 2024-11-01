@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\Users\gamin\Downloads\Dev Lorem\Lorem Ipsum C#\obj\Debug\
+C:\Users\gamin\AppData\Roaming\FlowLauncher\Plugins\Dev Lorem\Lorem Ipsum C#\obj\Debug\
 Flow.Launcher.Plugin.LoremIpsumGenerator
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 
-1-743272991
-41634950838
-6-1281376378
-215-364513548
-Views\Settings.xaml;
+5-1628101329
+31921128327
+121028868834
+214314081416
+Views\Settings.xaml;Views\Types\General.xaml;Views\Types\Paragraph.xaml;Views\Types\Sentence.xaml;Views\Types\Title.xaml;
 
 False
 

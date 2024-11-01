@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Flow.Launcher.Plugin.Lorem.Classes;
+using Flow.Launcher.Plugin.LoremIpsumGenerator.Classes;
 
 namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types
 {

@@ -54,7 +54,7 @@ namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Flow.Launcher.Plugin.Lorem;component/views/types/general.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Flow.Launcher.Plugin.LoremIpsumGenerator;component/views/types/general.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\Types\General.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

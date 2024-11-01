@@ -3,7 +3,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using Newtonsoft.Json;
-using Flow.Launcher.Plugin.Lorem.Classes;
+using Flow.Launcher.Plugin.LoremIpsumGenerator.Classes;
 using Path = System.IO.Path;
 
 namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Views.Types

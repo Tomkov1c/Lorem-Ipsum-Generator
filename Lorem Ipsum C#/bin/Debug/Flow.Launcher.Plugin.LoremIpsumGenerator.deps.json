@@ -6,17 +6,16 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "Flow.Launcher.Plugin.Lorem/1.0.0": {
+      "Flow.Launcher.Plugin.LoremIpsumGenerator/1.0.0": {
         "dependencies": {
           "Flow.Launcher.Plugin": "4.4.0",
           "Humanizer.Core": "2.14.1",
           "ModernWpfUI": "0.9.6",
           "Newtonsoft.Json": "13.0.3",
-          "Odotocodot.OneNote.Linq": "1.1.0",
           "System.Drawing.Common": "8.0.10"
         },
         "runtime": {
-          "Flow.Launcher.Plugin.Lorem.dll": {}
+          "Flow.Launcher.Plugin.LoremIpsumGenerator.dll": {}
         }
       },
       "Flow.Launcher.Plugin/4.4.0": {
@@ -37,14 +36,6 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
-          }
-        }
-      },
-      "Interop.Microsoft.Office.Interop.OneNote/1.1.0.2": {
-        "runtime": {
-          "lib/netstandard2.0/Interop.Microsoft.Office.Interop.OneNote.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
           }
         }
       },
@@ -472,19 +463,6 @@
           }
         }
       },
-      "Odotocodot.OneNote.Linq/1.1.0": {
-        "dependencies": {
-          "Interop.Microsoft.Office.Interop.OneNote": "1.1.0.2",
-          "System.Collections.Immutable": "8.0.0",
-          "System.Drawing.Common": "8.0.10"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Odotocodot.OneNote.Linq.dll": {
-            "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.0.0"
-          }
-        }
-      },
       "PropertyChanged.Fody/3.4.0": {
         "dependencies": {
           "Fody": "6.5.1"
@@ -493,14 +471,6 @@
           "lib/netstandard2.1/PropertyChanged.dll": {
             "assemblyVersion": "3.4.0.0",
             "fileVersion": "3.4.0.0"
-          }
-        }
-      },
-      "System.Collections.Immutable/8.0.0": {
-        "runtime": {
-          "lib/net7.0/System.Collections.Immutable.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -518,7 +488,7 @@
     }
   },
   "libraries": {
-    "Flow.Launcher.Plugin.Lorem/1.0.0": {
+    "Flow.Launcher.Plugin.LoremIpsumGenerator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -543,13 +513,6 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
-    },
-    "Interop.Microsoft.Office.Interop.OneNote/1.1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ut8pftjybCXTuwIAflYH1tm8yoH7mouIHvuFLqp6gLilIWN6KX534XuU9kNNtDD8trLmEBkKw5wIYqdY7tdxNA==",
-      "path": "interop.microsoft.office.interop.onenote/1.1.0.2",
-      "hashPath": "interop.microsoft.office.interop.onenote.1.1.0.2.nupkg.sha512"
     },
     "JetBrains.Annotations/2024.2.0": {
       "type": "package",
@@ -579,26 +542,12 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
-    "Odotocodot.OneNote.Linq/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Z3UF/1hL8uG1a2uPO8jlwdZ9p0yjtMScF9lrP9KUHZ3tHWOU6iXbULSJ64COGsawmOZTQfjPXYpa6VO9Z4sipQ==",
-      "path": "odotocodot.onenote.linq/1.1.0",
-      "hashPath": "odotocodot.onenote.linq.1.1.0.nupkg.sha512"
-    },
     "PropertyChanged.Fody/3.4.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-IAZyq0uolKo2WYm4mjx+q7A8fSGFT0x2e1s3y+ODn4JI0kqTDoo9GF2tdaypUzRFJZfdMxfC5HZW9QzdJLtOnA==",
       "path": "propertychanged.fody/3.4.0",
       "hashPath": "propertychanged.fody.3.4.0.nupkg.sha512"
-    },
-    "System.Collections.Immutable/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AurL6Y5BA1WotzlEvVaIDpqzpIPvYnnldxru8oXJU2yFxFUy3+pNXjXd1ymO+RA0rq0+590Q8gaz2l3Sr7fmqg==",
-      "path": "system.collections.immutable/8.0.0",
-      "hashPath": "system.collections.immutable.8.0.0.nupkg.sha512"
     },
     "System.Drawing.Common/8.0.10": {
       "type": "package",

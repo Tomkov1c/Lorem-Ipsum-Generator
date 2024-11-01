@@ -1,4 +1,4 @@
-﻿Flow.Launcher.Plugin.Lorem
+﻿Flow.Launcher.Plugin.LoremIpsumGenerator
 
 
 library
@@ -11,9 +11,9 @@ false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 
 5-1628101329
-5835094639
-91259008174
-2161514067655
+31921128327
+10-1386229161
+214314081416
 Views\Settings.xaml;Views\Types\General.xaml;Views\Types\Paragraph.xaml;Views\Types\Sentence.xaml;Views\Types\Title.xaml;
 
 False

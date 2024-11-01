@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Flow.Launcher.Plugin.Lorem.Classes
+namespace Flow.Launcher.Plugin.LoremIpsumGenerator.Classes
 {
     public class Settings
     {
