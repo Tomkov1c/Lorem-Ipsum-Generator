@@ -25,7 +25,7 @@ When I design I usually use Lorem Ipsum because I'm too lazy to write something 
 
 - [x] Setting default range / amount ...
 - [ ] Subtype settings
-- [ ] Legth range and precision
+- [ ] Length range and precision
 - [ ] Type specific settings
 - [ ] More types that can be generated
 
